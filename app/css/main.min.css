@@ -696,7 +696,8 @@
 100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}
 }
 .fa-rotate-90{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
-.fa-rotate-180{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.fa-rotate-180,.our_advantages_title .tittle-right:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg)}
+.fa-rotate-180{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";transform:rotate(180deg)}
 .fa-rotate-270{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}
 .fa-flip-horizontal{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";-webkit-transform:scale(-1,1);-ms-transform:scale(-1,1);transform:scale(-1,1)}
 .fa-flip-vertical{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";-webkit-transform:scale(1,-1);-ms-transform:scale(1,-1);transform:scale(1,-1)}
@@ -1383,7 +1384,6 @@ nav[canvas]{top:20px;left:20px;z-index:100}
 [off-canvas] ul.menu{margin:0;padding:0;display:block;list-style:none}
 .our_advantages{min-height:630px;background-color:#fff}
 .our_advantages h2{margin-top:75px;color:#626262;font-size:35px}
-.our_advantages .our_advantages_item{margin-bottom:55px;min-height:415px}
 .our_advantages .our_advantages_item .our_advantages_item_img i{font-size:72px;color:#00b6f4}
 .intermediate{min-height:300px;background-color:#00b6f4}
 .intermediate .intermediate_title{max-width:650px;margin:auto;color:#052243}
@@ -1396,30 +1396,59 @@ nav[canvas]{top:20px;left:20px;z-index:100}
 .intermediate .intermediate_wrap .intermediate_item input::-moz-placeholder{color:#43637f}
 .intermediate .intermediate_wrap .intermediate_item input:-ms-input-placeholder{color:#43637f}
 .intermediate .intermediate_wrap .intermediate_item input[type=submit]{background:#052243;color:#fff}
-.our_advantages_item .some-logo{position:relative}
+.our_advantages_item .some-logo{min-height:410px;position:relative}
 .our_advantages_item .some-logo .logo-some-company{position:absolute;width:136px;height:140px;border:3px dotted #ce93bf;-webkit-border-radius:50%;border-radius:50%;text-align:center}
-.our_advantages_item .some-logo img{position:absolute}
-.our_advantages_item .some-logo .apple{top:130px;left:158px}
-.our_advantages_item .some-logo .apple img{top:28px;left:38px;width:53px}
-.our_advantages_item .some-logo .blackBerry{left:24px;top:54px}
-.our_advantages_item .some-logo .blackBerry img{left:18px;top:54px;width:95px}
-.our_advantages_item .some-logo .hts{top:-15px;left:154px}
-.our_advantages_item .some-logo .hts img{top:31px;left:14px}
-.our_advantages_item .some-logo .lg{top:187px;right:126px}
-.our_advantages_item .some-logo .lg img{left:21px;top:46px;width:86px}
-.our_advantages_item .some-logo .nokia{left:161px;top:272px}
-.our_advantages_item .some-logo .nokia img{left:15px;top:57px;width:105px}
-.our_advantages_item .some-logo .palm{left:26px;top:198px}
-.our_advantages_item .some-logo .palm img{left:22px;top:49px;width:91px}
-.our_advantages_item .some-logo .samsung{right:123px;top:37px}
-.our_advantages_item .some-logo .samsung img{top:55px;left:20px}
+.our_advantages_item .some-logo .apple{top:130px;left:192px}
+.our_advantages_item .some-logo .apple img{position:absolute;top:28px;left:38px;width:53px}
+.our_advantages_item .some-logo .blackBerry{left:58px;top:54px}
+.our_advantages_item .some-logo .blackBerry img{position:absolute;left:18px;top:54px;width:95px}
+.our_advantages_item .some-logo .hts{top:-15px;left:188px}
+.our_advantages_item .some-logo .hts img{position:absolute;top:31px;left:14px}
+.our_advantages_item .some-logo .lg{top:187px;right:108px}
+.our_advantages_item .some-logo .lg img{position:absolute;left:21px;top:46px;width:86px}
+.our_advantages_item .some-logo .nokia{left:194px;top:273px}
+.our_advantages_item .some-logo .nokia img{position:absolute;left:15px;top:57px;width:105px}
+.our_advantages_item .some-logo .palm{left:59px;top:198px}
+.our_advantages_item .some-logo .palm img{position:absolute;left:22px;top:49px;width:91px}
+.our_advantages_item .some-logo .samsung{right:104px;top:37px}
+.our_advantages_item .some-logo .samsung img{position:absolute;top:55px;left:20px}
 .our_advantages_title{font-size:27px;text-transform:uppercase;line-height:1.3}
-.our_advantages_title h4{float:right;padding-right:31px;margin-top:114px;position:relative}
-.our_advantages_title h4:after,.our_advantages_title h4:before{content:"";background-image:url(../img/sprite.png);height:54px;display:inline-block;position:absolute}
+.our_advantages_title h4{position:relative}
+.our_advantages_title .tittle-left:after,.our_advantages_title .tittle-left:before{content:"";background-image:url(../img/sprite.png);height:54px;display:inline-block;position:absolute}
 .our_advantages_title h4 p{text-align:left}
 .our_advantages_title h4 b{color:#ce93bf}
-.our_advantages_title h4:before{background-position:-182px -54px;width:53px;top:-27px;left:-29px}
-.our_advantages_title h4:after{background-position:0 0;width:674px;top:43px;right:10px}
+.our_advantages_title .tittle-left{float:right;margin-top:114px}
+.our_advantages_title .tittle-left:before{background-position:-182px -54px;width:53px;top:-26px;left:-30px}
+.our_advantages_title .tittle-left:after{background-position:0 0;width:674px;bottom:-29px;right:6px}
+.our_advantages_title .tittle-left .second-title{margin-top:41px;display:block}
+.our_advantages_title .tittle-right:after,.our_advantages_title .tittle-right:before{content:"";background-image:url(../img/sprite.png);height:54px;display:inline-block;position:absolute}
+.our_advantages_title .title-left-indent-1{padding-right:27px}
+.our_advantages_title .title-left-indent-2{padding-right:50px;padding-left:11px}
+.our_advantages_title .title-left-indent-3{margin-top:168px;padding-right:84px;padding-left:22px}
+.our_advantages_title .tittle-right:before{background-position:0 0;width:674px;transform:rotate(180deg);top:-27px;left:25px}
+.our_advantages_title .tittle-right:after{background-position:-182px -54px;width:53px;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);right:90px;bottom:-31px}
+.our_advantages_title .title-right-indent-1{margin-top:100px;padding-left:55px}
+.our_advantages_title .title-right-indent-2{margin-top:167px;padding-left:62px}
+.our_advantages_item .some-foto-1{padding-left:9px}
+.our_advantages_item .some-foto-2{padding-left:51px;padding-top:39px}
+.our_advantages_item .some-foto-3{padding-left:9px}
+.our_advantages_item .some-foto-4{position:relative;padding-left:81px;padding-top:43px}
+.our_advantages_item .some-foto-4 .img-decor{position:absolute;top:-42px;right:47px}
+.our_advantages_item-row-1{margin-bottom:40px}
+.our_advantages_item-row-2{margin-bottom:11px}
+.our_advantages_item-row-3{margin-bottom:94px}
+.our_advantages_item-row-4{margin-bottom:95px}
+.create-cover-section{text-align:center}
+.create-cover-title{color:#404040;font-size:30px;text-transform:uppercase;margin-top:79px;font-weight:900;margin-bottom:66px}
+.accordion_content{display:none;font-size:1.8rem;color:#fff}
+.accordion_content p{margin:0;padding-left:30px;padding-top:10px;padding-bottom:10px;color:#3c3c3c;text-align:left}
+.accordion_content .accordion_content-item{display:table;width:100%}
+.accordion_content .accordion_content-item input,.accordion_content .accordion_content-item p{display:table-cell}
+.accordion{-webkit-border-radius:4px;border-radius:4px;margin-bottom:11px}
+.accordion_title{-webkit-transition:all .2s ease;transition:all .2s ease;line-height:24px;font-size:18px;min-height:67px;padding:10px 45px 7px 20px;cursor:pointer;background-color:#f5e9f2;position:relative;color:#3c3c3c}
+.accordion_title.active{background:#fff;-webkit-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0}
+.accordion_title span{position:absolute;top:17px;right:24px;display:inline-block;border:none;width:13px;height:13px;-webkit-transform:rotate(-48deg);-ms-transform:rotate(-48deg);transform:rotate(-48deg);border-left:2px solid #fff;border-bottom:2px solid #fff;-webkit-transition:all .5s ease;transition:all .5s ease}
+.accordion_title span.active{-webkit-transform:rotate(135deg);-ms-transform:rotate(135deg);transform:rotate(135deg);top:19px}
 .footer{background-color:#333;height:200px;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}
 @media only screen and (max-width:1200px){.header_modal{margin-top:20px}
 .intermediate .intermediate_wrap{margin-bottom:20px}

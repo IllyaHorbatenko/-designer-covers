@@ -96,6 +96,9 @@ if ( 'addEventListener' in document ) {
 })($);
 $(document).ready(function() {
    
+    accordion();
+
+
     var md = new MobileDetect(window.navigator.userAgent);
     
     if (md.userAgent() == "Safari" && md.mobile() == "iPhone" || md.mobile() == "iPad" ) {
@@ -509,6 +512,30 @@ $(document).ready(function() {
     });
 
 });
+
+
+function accordion() {
+    $(".accordion .accordion_title").click(function() {
+        $content = $(this).next();
+        if ($content.is(":visible")) { //если нажали на title аккордеона,
+            $content.slideUp(500, function() { //и если контент аккордеона видимый, то
+            }); //убираем его
+            $(this).children().removeClass("active"); //убираем активный класс у стрелки к примеру
+            //$(this).removeClass("active");
+
+        } else {
+            $(".accordion .accordion_content").slideUp("slow"); //если невидимый, прячем все скрытые 
+            $(".accordion .accordion_title").children() //убираем активный класс у стрелки к примеру
+                .removeClass("active");
+            $(".accordion_title").removeClass("active"); //убираем активный класс у стрелки к примеру
+            $content.slideToggle("slow"); //открываем скрытый блок у того что нажали
+            $(this).children().addClass("active"); //добавляем активный класс у стрекли к примеру
+            //$(this).addClass("active");
+        }
+    });
+}
+
+
 
 $(".loader_inner").fadeOut();
 $(".loader").delay(400).fadeOut("slow");

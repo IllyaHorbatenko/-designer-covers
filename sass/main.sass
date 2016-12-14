@@ -66,8 +66,6 @@ nav[canvas]
 		text-align: center
 		font-size: 35px
 	.our_advantages_item
-		margin-bottom: 55px
-		min-height: 415px
 		.our_advantages_item_img
 			text-align: center
 			i
@@ -118,8 +116,12 @@ nav[canvas]
 			input[type=submit]
 				background: #052243
 				color: #fff
+
+
+
 .our_advantages_item
 	.some-logo
+		min-height: 410px
 		position: relative
 		.logo-some-company
 			position: absolute
@@ -128,55 +130,59 @@ nav[canvas]
 			border: 3px dotted #ce93bf
 			border-radius: 50%
 			text-align: center
-		img
-			position: absolute
 		.apple
 			top: 130px
-			left: 158px
+			left: 192px
 			img
+				position: absolute
 				top: 28px
-				left: 38px
+				left: 38px	
 				width: 53px
 		.blackBerry
-			left: 24px
+			left: 58px
 			top: 54px
 			img
+				position: absolute
 				left: 18px
 				top: 54px
 				width: 95px
 		.hts
 			top: -15px
-			left: 154px
+			left: 188px
 			img
+				position: absolute
 				top: 31px
 				left: 14px
 		.lg
-			right: 10px
 			top: 187px
-			right: 126px
+			right: 108px
 			img
+				position: absolute
 				left: 21px
 				top: 46px
 				width: 86px
 
 		.nokia
-			left: 161px
-			top: 272px
+			left: 194px
+			top: 273px
 			img
+				position: absolute
 				left: 15px
 				top: 57px
 				width: 105px
 		.palm
-			left: 26px
+			left: 59px
 			top: 198px
 			img
+				position: absolute
 				left: 22px
 				top: 49px
 				width: 91px
 		.samsung
-			right: 123px
+			right: 104px
 			top: 37px
 			img
+				position: absolute
 				top: 55px
 				left: 20px
 .our_advantages_title
@@ -184,29 +190,90 @@ nav[canvas]
 	text-transform: uppercase
 	line-height: 1.3
 	h4
-		float: right
-		padding-right: 31px
-		margin-top: 114px	
 		position: relative
 		p
 			text-align: left
 		b
 			color: #ce93bf
+	.tittle-left
+		float: right
+		margin-top: 114px	
 		&:before
 			content: ""
 			@include sprite($figure-up)
 			display: inline-block
 			position: absolute
-			top: -27px
-			left: -29px
+			top: -26px
+			left: -30px
 		&:after
 			content: ""
 			@include sprite($dotted-line)
 			display: inline-block
 			position: absolute
-			top: 43px
-			right: 10px
-	
+			bottom: -29px
+			right: 6px
+		.second-title
+			margin-top: 41px
+			display: block
+	.title-left-indent-1
+		padding-right: 27px
+	.title-left-indent-2
+		padding-right: 50px
+		padding-left: 11px
+	.title-left-indent-3
+		margin-top: 168px
+		padding-right: 84px
+		padding-left: 22px
+	.tittle-right
+		&:before
+			content: ""
+			@include sprite($dotted-line)
+			display: inline-block
+			position: absolute
+			transform: rotate(180deg)
+			top: -27px
+			left: 25px
+		&:after
+			content: ""
+			@include sprite($figure-up)
+			display: inline-block
+			position: absolute
+			transform: rotate(180deg)
+			right: 90px
+			bottom: -31px
+	.title-right-indent-1
+		margin-top: 100px
+		padding-left: 55px
+	.title-right-indent-2
+		margin-top: 167px	
+		padding-left: 62px
+
+
+
+.our_advantages_item
+	.some-foto-1
+		padding-left: 9px
+	.some-foto-2
+		padding-left: 51px
+		padding-top: 39px
+	.some-foto-3
+		padding-left: 9px
+	.some-foto-4
+		position: relative
+		padding-left: 81px
+		padding-top: 43px
+		.img-decor
+			position: absolute
+			top: -42px
+			right: 47px
+.our_advantages_item-row-1
+	margin-bottom: 40px
+.our_advantages_item-row-2
+	margin-bottom: 11px
+.our_advantages_item-row-3
+	margin-bottom: 94px
+.our_advantages_item-row-4
+	margin-bottom: 95px
 
 //	Секция 
 //	Секция
@@ -215,6 +282,74 @@ nav[canvas]
 //	Секция 
 //	Секция
 //	Секция
+.create-cover-section
+	text-align: center
+	
+.create-cover-title
+	color: #404040
+	font-size: 30px
+	text-transform: uppercase
+	margin-top: 79px
+	font-weight: 900
+	margin-bottom: 66px
+
+.accordion_content
+	display: none
+	font-size: 1.8rem
+	color: #fff
+	p
+		margin: 0
+		padding-left: 30px
+		padding-top: 10px
+		padding-bottom: 10px
+		color: #3c3c3c
+		text-align: left
+	.accordion_content-item
+		display: table
+		width: 100%
+		p,
+		input
+			display: table-cell
+.accordion
+	border-radius: 4px
+	margin-bottom: 11px
+
+
+.accordion_title
+	transition: all 0.2s ease
+	line-height: 24px
+	font-size: 18px
+	min-height: 67px
+	padding: 10px 45px 7px 20px
+	cursor: pointer
+	background-color: #f5e9f2
+	position: relative
+	color: #3c3c3c
+	&.active
+		background: #fff
+		border-radius: 4px 4px 0 0
+	span
+		position: absolute
+		top: 17px
+		right: 24px
+		display: inline-block
+		border: none
+		width: 13px
+		height: 13px
+		transform: rotate(-48deg)
+		border-left: 2px solid #fff
+		border-bottom: 2px solid #fff
+		transition: all 0.5s ease
+		&.active
+			transform: rotate(135deg)
+			top: 19px
+
+
+
+
+
+
+
 
 
 // Секия footer 
