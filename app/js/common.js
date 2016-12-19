@@ -13,6 +13,12 @@ $(window).resize(function() {
 
 //изменяется - для плавной обратной анимации animate.css*/
 $(window).scroll(function() {
+
+
+
+
+
+
     $('.animated').each(function() {
         var imagePos = $(this).offset().top;
         var imageHght = $(this).outerHeight();
@@ -36,10 +42,10 @@ $(window).scroll(function() {
  * FastClick
  */
 
-if ( 'addEventListener' in document ) {
-    document.addEventListener('DOMContentLoaded', function () {
-        FastClick.attach( document.body );
-    }, false );
+if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
 }
 // Initialize Slidebars
 (function($) {
@@ -51,10 +57,10 @@ if ( 'addEventListener' in document ) {
     $('#nav-button-label').on('click', function(event) {
         // Stop default action and bubbling
         event.stopPropagation();
-        event.preventDefault();   
+        event.preventDefault();
         // Toggle the Slidebar with id 'id-1'
         controller.toggle('id-1');
-        $("html,body").toggleClass("slidebars"); 
+        $("html,body").toggleClass("slidebars");
     });
 
     // Close Slidebar links
@@ -78,9 +84,9 @@ if ( 'addEventListener' in document ) {
         $('[canvas]').addClass('js-close-any');
     });
     // Add close class to canvas container when Slidebar is opened
-        $( controller.events ).on( 'closing', function ( event ) {
-            $( '[canvas]' ).removeClass( 'js-close-any' );
-        } );
+    $(controller.events).on('closing', function(event) {
+        $('[canvas]').removeClass('js-close-any');
+    });
     // Close any
     $(document).on('click', '.js-close-any', function(event) {
         if (controller.getActiveSlidebar()) {
@@ -88,21 +94,21 @@ if ( 'addEventListener' in document ) {
             event.stopPropagation();
             $("#nav-button-label").removeClass("nav-on");
             $("#nav-button-label .nav-line").removeClass("active");
-            $("html,body").removeClass("slidebars");         
+            $("html,body").removeClass("slidebars");
             controller.close();
-            
+
         }
-    });  
+    });
 })($);
 $(document).ready(function() {
-   
+
     accordion();
 
 
     var md = new MobileDetect(window.navigator.userAgent);
-    
-    if (md.userAgent() == "Safari" && md.mobile() == "iPhone" || md.mobile() == "iPad" ) {
-        $("html,body").css("overflow", "hidden");  
+
+    if (md.userAgent() == "Safari" && md.mobile() == "iPhone" || md.mobile() == "iPad") {
+        $("html,body").css("overflow", "hidden");
     }
     // для инициализации tooltips
     // $( document ).tooltip({
@@ -207,10 +213,10 @@ $(document).ready(function() {
 
         if (window.matchMedia("(min-width: 992px)").matches) {
             $("body").css({ "overflow": "hidden", "padding-right": "17px" });
-        }          
-        if (window.matchMedia("(max-width: 992px)").matches){
-            
-           $("body").css({ "overflow": "hidden", "padding-right": "0px" }); 
+        }
+        if (window.matchMedia("(max-width: 992px)").matches) {
+
+            $("body").css({ "overflow": "hidden", "padding-right": "0px" });
         }
     });
     // overlay для закрытия

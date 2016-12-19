@@ -75,49 +75,6 @@ nav[canvas]
 .main_content
 	text-align: center 
 // Секция 
-.intermediate
-	text-align: center
-	min-height: 300px
-	background-color: #00b6f4
-	.intermediate_title
-		max-width: 650px
-		margin: auto		
-		color: #052243
-		h3
-			margin: 30px 30px
-			text-transform: uppercase
-			font-size: 24px
-			color: #052243
-			
-			
-
-	.intermediate_wrap
-		margin-top: 40px
-		form
-		.intermediate_item
-			display: inline-block
-			input
-				width: 260px
-				display: inline-block	
-				border: 1px solid #a2b6c9
-				background: #fff
-				color: #43637f
-				height: 40px
-				margin: 0 10px
-				padding: 0 0 0 9px
-				&::-webkit-input-placeholder
-					color: #43637f
-				&:-moz-placeholder
-					color: #43637f
-				&::-moz-placeholder
-					color: #43637f
-				&:-ms-input-placeholder
-					color: #43637f
-			input[type=submit]
-				background: #052243
-				color: #fff
-
-
 
 .our_advantages_item
 	.some-logo
@@ -186,9 +143,9 @@ nav[canvas]
 				top: 55px
 				left: 20px
 .our_advantages_title
-	font-size: 27px
+	font-size: 24px
 	text-transform: uppercase
-	line-height: 1.3
+	line-height: 1.5
 	h4
 		position: relative
 		p
@@ -204,16 +161,16 @@ nav[canvas]
 			display: inline-block
 			position: absolute
 			top: -26px
-			left: -30px
+			left: -23px
 		&:after
 			content: ""
 			@include sprite($dotted-line)
 			display: inline-block
 			position: absolute
-			bottom: -29px
+			bottom: -28px
 			right: 6px
 		.second-title
-			margin-top: 41px
+			margin-top: 35px	
 			display: block
 	.title-left-indent-1
 		padding-right: 27px
@@ -287,7 +244,7 @@ nav[canvas]
 	
 .create-cover-title
 	color: #404040
-	font-size: 30px
+	font-size: 28px
 	text-transform: uppercase
 	margin-top: 79px
 	font-weight: 900
@@ -297,6 +254,12 @@ nav[canvas]
 	display: none
 	font-size: 1.8rem
 	color: #fff
+	overflow: auto
+	max-height: 415px
+	#wrapper
+		width: 250px
+		height: 350px
+		margin: 0 auto
 	p
 		margin: 0
 		padding-left: 30px
@@ -334,29 +297,359 @@ nav[canvas]
 		right: 24px
 		display: inline-block
 		border: none
-		width: 13px
-		height: 13px
-		transform: rotate(-48deg)
-		border-left: 2px solid #fff
-		border-bottom: 2px solid #fff
 		transition: all 0.5s ease
-		&.active
-			transform: rotate(135deg)
-			top: 19px
+		@include sprite ($arrow)
+
+.constructor-area-container
+	background: url(../img/cell.jpg) no-repeat
+	background-position: center
+	background-size: cover
+	min-height: 640px
+	width: 100%
+	.functions-container
+		width: 263px
+		float: right
+		margin-right: 7px
+		position: relative
+		min-height: 640px
+	.add-files-container
+		width: 165px
+		float: right
+		.or
+			margin: -3px 0 0 0
+			font-size: 15px
+	.to-order-container
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 100%
+		.to-order
+			background: #ff9800
+			color: #fff
+			margin-bottom: 2px
+			padding: 18px
+			font-size: 20px
+			cursor: pointer
+		.name-phone
+			margin-bottom: -10px
+			font-size: 22px
+		.price
+			margin-bottom: 4px
+			font-size: 33px
+	.functions-title
+		color: #3c3c3c
+		font-size: 19px
+		text-align: left
+		margin-top: 37px
+		margin-bottom: 16px
+		.second
+			font-size: 14px
+	.add-foto-form
+		background: #ff9800
+		display: block
+		padding: 11px 0 4px 0
+		color: #fff
+		cursor: pointer
+		span
+			display: inline-block
+		.disk
+			@include sprite($disk)
+		.disk-text
+			margin-top: -5px
+		.instagram
+			@include sprite($instogram)
+		.instagram-text
+			margin-top: -10px
+		.vk
+			@include sprite($vk)
+		&.vk-indent
+			padding-bottom: 8px
+		.vk-text
+			margin-top: -8px
+.some-constructor
+	float: left
+	.phone-foto
+	.your-name
+		width: 186px
+		//height: 375px
+		p
+			transform: rotate(90deg)
+.intermediate
+	.foto-container
+		img
+			margin-bottom: 20px
+	.intermediate-title
+		text-align: center
+		font-size: 28px
+		text-transform: uppercase
+		margin-top: 117px
+		line-height: 1.3
+		margin-bottom: 69px
+	.intermediate-form-container
+		.get-discount
+			font-size: 18px
+			color: #fff
+			background: #ce93bf
+			text-align: center
+			padding: 13px 150px
+			line-height: 1.2
+			margin-bottom: 20px
+		.subscribe-insta,
+		.subscribe-insta-2
+			font-size: 16px
+			text-align: center
+			margin-bottom: 19px
+			position: relative
+			padding-left: 100px	
+			.text
+				background: #f5e9f2
+				padding: 20px 0 24px
+				display: block
+			.numder
+				color: #fff
+				background: #ce93bf
+				padding: 21px 29px
+				position: absolute
+				left: 0
+			a
+				color: #3c3c3c
+				p
+					text-decoration: underline
+				&.hover
+					color: #3c3c3c
+#form
+	input
+		width: 100%
+		height: 68px
+		display: inline-block
+		margin-bottom: 20px
+		padding-left: 17px
+		border: 1px solid #ce93bf
+		&::-webkit-input-placeholder
+			color: #afafaf
+			font-style: italic
+		&:-moz-placeholder
+			color: #afafaf
+			font-style: italic
+		&::-moz-placeholder
+			color: #afafaf
+			font-style: italic
+		&:-ms-input-placeholder
+			color: #afafaf
+			font-style: italic
+
+	input[type=submit]
+		margin: 0
+		background: #ff9800
+		color: #fff
+		border: none
+		padding: 0
+
+// секция схемы доставки
+.delivery-scheme-section
+	.title
+		font-size: 28px
+		color: #3c3c3c
+		text-align: center
+		text-transform: uppercase
+		margin-top: 95px
+		margin-bottom: 75px
+		line-height: 1.2
+	.delivery-scheme-title
+		background: #ce93bf
+		text-align: center
+		color: #fff
+		padding: 20px 0px 23px
+		margin-bottom: 20px
+	.delivery-scheme-item-1,
+	.delivery-scheme-item-2
+		margin-bottom: 20px
+		.content
+			text-align: center
+			border: 1px solid #ce93bf
+			padding: 43px 0 44px
+			font-size: 14px
+			line-height: 1.3
+		span
+			position: relative
+			margin-left: 70px
+			text-align: left
+			display: inline-block
+		.indent-1
+			padding: 25px 0
+		.indent-2
+			padding: 25px 0
+		.indent-3
+			padding: 34px 0
+		&.point
+			position: relative
+			&:before
+				content: ''
+				@include sprite($point)
+				display: inline-block
+				top: -20px
+				left: 0
+				right: 0
+				margin: auto
+				position: absolute
+			&:after
+				content: ''
+				@include sprite($point)
+				display: inline-block
+				position: absolute
+				bottom: -20px
+				left: 0
+				right: 0
+				margin: auto
+	.delivery-scheme-item-1
+		padding-left: 0	
+	.delivery-scheme-item-2
+		padding-right: 0	
+	.max
+		padding: 0
+		
+
+	.box
+		&:before
+			content: ""
+			position: absolute
+			@include sprite($box)
+			left: -54px
+			top: -12px
+	.box-2
+		&:before
+			content: ""
+			position: absolute
+			@include sprite($box-2)
+			left: -54px
+			top: -12px
+	.clock
+		&:before
+			content: ""
+			position: absolute
+			@include sprite($clock)
+			left: -54px
+			top: -12px
+	.card
+		&:before
+			content: ""
+			position: absolute
+			@include sprite($card)
+			left: -60px
+			top: 12px
+	.get
+		&:before
+			content: ""
+			position: absolute
+			@include sprite($get)
+			left: -54px
+			top: -11px
+	.procent
+		&:before
+			content: ""
+			position: absolute
+			@include sprite($procent)
+			left: -54px
+			top: 12px
+	.good
+		&:before
+			content: ""
+			position: absolute
+			@include sprite($good)
+			left: -54px
+			top: 3px
+	.wholesale-price-container
+		float: none
+		text-align: center
+		margin: 33px auto auto
+		.discuss-lable
+			font-size: 20px
+			margin-bottom: 8px
+		.discuss
+			background: #ff9800
+			display: block
+			cursor: pointer
+			color: #fff
+			font-size: 16px
+			padding: 20px 0 25px	
 
 
 
-
-
-
-
-
-
+.book-cover-section
+	.title
+		font-size: 28px
+		color: #3c3c3c
+		text-align: center
+		text-transform: uppercase
+		margin-top: 111px
+		margin-bottom: 64px
+		line-height: 1.2
+	.foto-container
+		margin-top: 11px
+		img
+			margin-bottom: 26px
+		.img-container
+			display: inline-block
+	.form-aside-container
+		padding-right: 100px
+		padding-left: 38px
+		#form
+			label
+				font-size: 14px
+			input[type=submit]
+				margin-top: 21px
+			.form-item
+				margin-bottom: 21px
+	.form-aside
+		margin-bottom: 22px
+		b
+			font-size: 24px
+		p
+			font-size: 18px
+			margin-top: -3px
+			line-height: 1.3
 // Секия footer 
 .footer
-	background-color: #333
-	height: 200px
+	background: url(../img/backgrond-footer.png)
 	flex: 0 0 auto	
+	padding-top: 173px
+	color: #fff
+	margin-top: 52px
+	padding-bottom: 43px
+	.footer-container
+		padding-bottom: 77px
+	.footer-nav
+		ul
+			padding-left: 36px
+		li
+			display: inline-block
+			margin-right: 49px
+			text-transform: uppercase
+			font-size: 14px
+			cursor: pointer
+	.develp-company
+		text-align: right
+		font-size: 12px
+		a
+			margin-top: 19px
+			padding-right: 29px
+			position: relative
+			color: #fff
+			&:before
+				content: ''
+				display: inline-block
+				position: absolute
+				right: -10px
+				@include sprite($footer-logo)
+			&:hover
+				color: #fff
+	.footer-link
+		font-size: 12px
+		text-align: center
+		a
+			color: #fff
+			&:hover
+				color: #fff
 
 
 //ALWAYS END
