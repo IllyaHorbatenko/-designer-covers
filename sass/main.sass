@@ -306,6 +306,23 @@ nav[canvas]
 	background-size: cover
 	min-height: 640px
 	width: 100%
+	.want
+		position: absolute
+		bottom: 28px
+		left: 61px
+		word-spacing: 8px
+		font-size: 15px
+		color: #3c3c3c
+		text-decoration: underline
+		&:before
+			content: ''
+			display: inline-block
+			position: relative
+			top: 11px
+			left: -11px
+			@include sprite($icon)
+		&:hover
+			color: #3c3c3c
 	.functions-container
 		width: 263px
 		float: right
@@ -332,16 +349,16 @@ nav[canvas]
 			cursor: pointer
 		.name-phone
 			margin-bottom: -10px
-			font-size: 22px
+			font-size: 20px
 		.price
 			margin-bottom: 4px
-			font-size: 33px
+			font-size: 30px
 	.functions-title
 		color: #3c3c3c
-		font-size: 19px
+		font-size: 18px
 		text-align: left
 		margin-top: 37px
-		margin-bottom: 16px
+		margin-bottom: 23px
 		.second
 			font-size: 14px
 	.add-foto-form
@@ -350,30 +367,55 @@ nav[canvas]
 		padding: 11px 0 4px 0
 		color: #fff
 		cursor: pointer
+		font-size: 14px
 		span
 			display: inline-block
 		.disk
 			@include sprite($disk)
 		.disk-text
-			margin-top: -5px
+			margin-top: -2px
 		.instagram
 			@include sprite($instogram)
 		.instagram-text
-			margin-top: -10px
+			margin-top: -6px
 		.vk
 			@include sprite($vk)
 		&.vk-indent
 			padding-bottom: 8px
 		.vk-text
-			margin-top: -8px
+			margin-top: -5px
 .some-constructor
-	float: left
+	position: absolute
+	left: 137px
+	top: 22px
 	.phone-foto
-	.your-name
-		width: 186px
-		//height: 375px
-		p
-			transform: rotate(90deg)
+		width: 335px
+		height: 570px
+		position: absolute
+		z-index: 0
+		left: 16px
+		.your-name
+			height: 186px
+			width: 375px
+			background: #fff
+			transform: rotate(-90deg)
+			position: absolute
+			right: 53px
+			top: 126px
+			&:before
+				content: ''
+				display: inline-block
+				@include sprite($arrow-constructor)
+				position: absolute
+				right: 48px
+				bottom: -71px
+				transform: rotate(90deg)
+		.model-foto
+			position: absolute
+			bottom: 1px
+			right: 0
+			z-index: 1
+
 .intermediate
 	.foto-container
 		img
@@ -575,6 +617,8 @@ nav[canvas]
 
 
 
+.img-container
+	display: inline-block
 .book-cover-section
 	.title
 		font-size: 28px
@@ -588,8 +632,6 @@ nav[canvas]
 		margin-top: 11px
 		img
 			margin-bottom: 26px
-		.img-container
-			display: inline-block
 	.form-aside-container
 		padding-right: 100px
 		padding-left: 38px

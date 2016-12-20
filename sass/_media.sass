@@ -18,18 +18,480 @@
 				margin: 30px auto 30px
 			.modal_form_input_wrap
 				display: inline-block
+	.header
+		min-height: 573px
+		margin-bottom: 25px
+	.header_logo 	
+		a 
+			h1
+				font-size: 37px
+	.header_nav		
+		display: inline-block
+		position: relative
+		ul
+			padding-left: 59px
+			margin-bottom: 0
+			margin-top: 24px
+			text-align: left
+			text-transform: uppercase
+			li		
+				margin-right: 40px
+				a
+					font-size: 12px
+					&:last-child
+						margin-right: 0
+				&:last-child
+					margin-right: 0
+	.header-tel-back
+		font-size: 16px
+		padding-left: 0
+		text-align: right
+	.header-main-aside 
+		h2
+			font-size: 30px
+			margin-bottom: 18px
+		aside
+			h3
+				font-size: 20px
+				margin-top: 0
+				padding-right: 0
+				margin-bottom: 22px
+			p
+				font-size: 15px
+				padding-right: 17px
+	.go-to-constructor-container 
+		.go-to-constructor-img 
+			margin-bottom: 23px
+			.name-img,
+			.foto-img
+				height: 131px
+			.name-img
+				margin-left: 19px
+			.foto-img
+				top: 51px
+				right: -30px
+
+	.top-header-panel	
+		margin-bottom: 46px
+	.go-to-constructor-container
+		&:before
+			@include sprite($arrow-mob)
+	.mockup-container 
+		.mockup-img1
+			left: 38px
+			top: 105px
+		.mockup-img2
+			top: 138px
+			right: -10px
+		img
+			height: 357px
+		.mockup-price
+			top: 47px
+			right: -15px
+			span
+				font-size: 24px
+				padding: 39px 13px
+	.go-to-constructor-container 
+		p
+			font-size: 15px
+		.go-to-constructor-button
+			padding: 11px 18px
+	.our_advantages_title
+		.tittle-left
+			&:before
+				@include sprite($figure-up-mob)
+				top: -26px
+				left: -23px
+			&:after
+				@include sprite($dotted-line-mob)
+				bottom: -28px
+				right: -15px
+		.tittle-right
+			&:before
+		
+				@include sprite($dotted-line-mob)
+				transform: rotate(180deg)
+				top: -27px
+				left: 25px
+			&:after
+				@include sprite($figure-up-mob)
+				transform: rotate(180deg)
+				right: 90px
+				bottom: -31px
+		.title-right-indent-1
+			margin-top: 85px
+			padding-left: 47px
+	.our_advantages_title
+		font-size: 19px
+		.title-left-indent-1
+			padding-right: 0
+			margin-top: 107px
+		.title-left-indent-2
+			margin-top: 100px	
+		.title-right-indent-2 
+			margin-top: 138px
+		.title-left-indent-3
+			margin-top: 126px
+			padding-right: 38px
+			word-spacing: 3px
+	.our_advantages_item
+		.some-foto-1
+			img
+				height: 276px
+		.some-foto-2
+			img
+				height: 268px
+		.some-foto-3
+			img
+				height: 273px
+		.some-foto-4 
+			padding-top: 17px
+			img
+				height: 380px
+			.img-decor
+				top: -53px
+				right: 21px
+				height: 272px
+
+		.some-logo
+			min-height: 348px
+			.logo-some-company
+				width: 113px
+				height: 116px
+			.apple
+				top: 118px
+				left: 159px
+				img
+					top: 23px
+					left: 30px
+					width: 46px
+			.blackBerry
+				left: 51px
+				top: 56px
+				img
+					left: 14px
+					top: 44px
+					width: 80px
+			.hts
+				top: 0px
+				left: 156px
+				img
+					top: 24px
+					left: 11px
+					width: 91px
+			.lg
+				top: 165px
+				right: 72px
+				img
+					left: 18px
+					top: 39px
+					width: 72px
+	
+			.nokia
+				left: 161px
+				top: 237px
+				img
+					left: 14px
+					top: 45px
+					width: 85px
+			.palm
+				left: 51px
+				top: 177px
+				img
+					left: 17px
+					top: 35px
+					width: 78px
+			.samsung
+				right: 68px
+				top: 43px
+				img
+					top: 44px
+					left: 17px
+					width: 77px
+	.our_advantages_item-row-1
+		margin-bottom: 25px
+
+
+	.create-cover-title
+		font-size: 23px
+		margin-top: 70px
+		margin-bottom: 56px
+	.accordion_title
+		font-size: 15px
+		padding: 10px 40px
+		line-height: 19px	
+		min-height: 59px
+		span
+			top: 23px
+			right: 13px
+			@include sprite ($arrow-acor-mob)
+	.accordion_content
+		font-size: 14px
+		p
+			padding-top: 9px
+			padding-bottom: 0px
+	.constructor-area-container 
+		min-height: 0
+		.functions-container
+			min-height: 530px
+			width: 213px
+			margin-right: 0
+		.functions-title
+			font-size: 14px 
+			margin-bottom: 15px
+			margin-top: 31px
+			.second
+				font-size: 11px
+		.add-foto-form
+			font-size: 12px
+			padding: 9px 0 4px
+			.disk
+				@include sprite($disk-mob)
+			.disk-text
+				margin-top: -2px
+			.instagram
+				@include sprite($instogram-mob)
+			.instagram-text
+				margin-top: -6px
+			.vk
+				@include sprite($vk-mob)
+		.add-files-container 
+			width: 132px
+			.or	
+				font-size: 12px
+		.want
+			bottom: 25px
+			left: 37px
+			word-spacing: -1px
+			&:before
+				top: 9px
+				left: -6px
+				@include sprite($man)
+		.to-order-container 
+			.to-order
+				font-size: 14px
+				padding: 16px 0 19px
+			.name-phone 
+				margin-bottom: -1px
+				font-size: 18px
+			.price	
+				font-size: 20px
+				margin-bottom: 8px
+	.some-constructor
+		.phone-foto
+			height: 462px
+			.model-foto
+				bottom: -4px
+				right: 94px
+				height: 344px
+			.your-name
+				right: 137px
+				top: 97px
+				height: 155px
+				width: 309px
+				&:before
+					@include sprite($arrow-constructor-mob)
+					right: 40px
+					bottom: -56px
+
+
+	.intermediate 
+		.intermediate-title
+			font-size: 23px
+			margin-top: 89px
+			margin-bottom: 61px
+		.foto-container 
+			img
+				height: 122px
+		.intermediate-form-container 
+			.get-discount
+				font-size: 15px
+				padding: 11px 108px
+				margin-bottom: 15px
+			.subscribe-insta,
+			.subscribe-insta-2
+				margin-bottom: 15px
+				padding-left: 82px
+				.numder
+					background: #ce93bf
+					padding: 16px 22px
+				.text
+					padding: 12px 0 20px
+	#form 
+		input
+			height: 57px
+			margin-bottom: 17px
+			padding-left: 7px
+			&::-webkit-input-placeholder
+				font-size: 14px
+			&:-moz-placeholder
+				font-size: 14px
+			&::-moz-placeholder
+				font-size: 14px
+			&:-ms-input-placeholder
+				font-size: 14px
+		input[type=submit]
+			font-size: 14px
+
+
+	.delivery-scheme-section 
+		.title
+			font-size: 23px
+			margin-top: 70px
+			margin-bottom: 62px
+		.delivery-scheme-title
+			padding: 14px 0 17px
+			margin-bottom: 17px
+		.delivery-scheme-item-1,
+		.delivery-scheme-item-2
+			.content
+				font-size: 12px
+				padding: 35px 0
+		.box
+			&:before
+				@include sprite($box-mob)
+				left: -36px
+		.box-2
+			&:before
+				@include sprite($box-2-mob)
+				left: -41px
+		.clock
+			&:before
+				@include sprite($clock-mob)
+		.card
+			&:before
+				@include sprite($card-mob)
+				left: -44px
+				top: 9px
+		.get
+			&:before
+				@include sprite($get-mob)
+				left: -41px
+		.procent
+			&:before
+				@include sprite($procen-mobt)
+				left: -40px
+		.good
+			&:before
+				@include sprite($good-mob)
+				left: -38px
+
+		.delivery-scheme-item-1
+			margin-bottom: 0
+			span
+				margin-left: 38px
+			.indent-1
+				padding: 20px 0
+			.indent-2
+				padding: 20px 0
+		.delivery-scheme-item-2
+			margin-bottom: 17px
+			span
+				margin-left: 31px
+			.indent-3
+				padding: 28px 0
+		.wholesale-price-container
+			margin: 26px auto auto
+			.discuss-lable
+				font-size: 16px
+			.discuss
+				font-size: 14px
+				padding: 18px 0 16px
+
+
+	.book-cover-section
+		.title
+			font-size: 23px
+			margin-top: 93px
+			margin-bottom: 50px
+		.foto-container
+			img
+				height: 132px	
+		.form-aside-container
+			padding-right: 104px
+			padding-left: 7px
+			#form 
+				label
+					font-size: 12px
+				input
+					margin-bottom: 10px
+		.form-aside
+			margin-bottom: 16px
+			b
+				font-size: 20px
+			p
+				font-size: 14px
+				margin-top: 0px
+				line-height: 1.4
+	
+
+	.footer
+		padding-top: 123px
+		.footer-container
+			padding-bottom: 57px
+		.footer-nav 
+			ul
+				padding-left: 0
+			li
+				margin-right: 44px
+				&:last-child
+					margin-right: 0
+		.develp-company
+			margin-top: 23px
+			padding-right: 72px
+		.develp-company
+			a
+				&:before
+					right: -49px
+					top: -12px
+					@include sprite($logo-footer-mob)
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-	.header_nav
-		display: none
+	
+	.header_logo 	
+		a 
+			h1
+				font-size: 27px
+				margin: 0 0 0 18px
+	.header_nav 
+		ul
+			padding-left: 0
+			margin-top: 11px	
+	.header-tel-back
+		padding: 0
+		font-size: 15px
+		margin-top: 13px	
+	.header-main-aside 
+		h2
+			font-size: 24px
+			margin-bottom: 13px
+			margin-top: 14px
+			padding-left: 18px
+		aside
+			padding-left: 17px	
+
+	.go-to-constructor-container 
+		.go-to-constructor-img 
+			margin-bottom: 7px
+			margin-top: 16px
+			padding-bottom: 40px
+			.name-img,
+			.foto-img
+				height: 100px
+			.name-img
+				margin-left: 17px
+			.foto-img
+				top: 40px
+
+
+
 	.header_logo
 		display: block
 	.header_modal
 		margin-top: 40px
-	nav[canvas]
-		display: block		
+	
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	
