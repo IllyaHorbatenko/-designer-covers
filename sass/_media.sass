@@ -87,15 +87,10 @@
 			height: 357px
 		.mockup-price
 			top: 47px
-			right: -15px
+			right: 2px
 			span
 				font-size: 24px
 				padding: 39px 13px
-	.go-to-constructor-container 
-		p
-			font-size: 15px
-		.go-to-constructor-button
-			padding: 11px 18px
 	.our_advantages_title
 		.tittle-left
 			&:before
@@ -221,7 +216,7 @@
 		padding: 10px 40px
 		line-height: 19px	
 		min-height: 59px
-		span
+		.arrow
 			top: 23px
 			right: 13px
 			@include sprite ($arrow-acor-mob)
@@ -347,6 +342,15 @@
 			.content
 				font-size: 12px
 				padding: 35px 0
+			&.point
+				&:before
+					@include sprite($point)
+					transform: scale(0.8)
+					top: -17px
+				&:after
+					@include sprite($point)
+					transform: scale(0.8)
+					 bottom: -17px
 		.box
 			&:before
 				@include sprite($box-mob)
@@ -377,7 +381,7 @@
 				left: -38px
 
 		.delivery-scheme-item-1
-			margin-bottom: 0
+			margin-bottom: 17px
 			span
 				margin-left: 38px
 			.indent-1
@@ -446,6 +450,16 @@
 					top: -12px
 					@include sprite($logo-footer-mob)
 
+	.order
+		bottom: -233px
+		left: -268px
+		width: 217px
+		p
+			font-size: 15px
+		.go-to-constructor-button
+			padding: 11px 18px
+			font-size: 13px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -455,6 +469,9 @@
 			h1
 				font-size: 27px
 				margin: 0 0 0 18px
+	.header
+		min-height: 475px
+		margin-bottom: 0
 	.header_nav 
 		ul
 			padding-left: 0
@@ -471,8 +488,25 @@
 			padding-left: 18px
 		aside
 			padding-left: 17px	
+			h3
+				font-size: 16px
+				margin-bottom: 16px
+			p
+				font-size: 14px
 
-	.go-to-constructor-container 
+	.order
+		bottom: -142px
+		left: -153px
+		width: 158px
+		p
+			text-align: left
+			font-size: 14px
+			margin-bottom: 5px
+		.go-to-constructor-button
+			font-size: 12px
+			padding: 10px 4px
+
+	.go-to-constructor-container 		
 		.go-to-constructor-img 
 			margin-bottom: 7px
 			margin-top: 16px
@@ -484,17 +518,492 @@
 				margin-left: 17px
 			.foto-img
 				top: 40px
+		&:before
+			transform: scale(0.75)
+			right: -101px
+			top: -4px
+	.mockup-container 
+		img
+			height: 269px
+		.mockup-price
+			top: 31px
+			right: 2px
+			span
+				font-size: 18px
+				padding: 26px 7px
+		.mockup-img1
+			left: 35px
+			top: 67px
+		.mockup-img2
+			top: 89px
+			right: 2px
+
+	.our_advantages_item
+		.some-foto-1 
+			img
+				height: 214px
+		.some-foto-2
+			padding-left: 35px
+			padding-top: 22px
+			img
+				height: 207px
+		.some-foto-3
+			img
+				height: 209px
+		.some-foto-4
+			padding-left: 56px
+			padding-top: 18px
+			.img-decor
+				top: -34px
+				right: 9px
+				height: 205px
+			img
+				height: 293px
+
+	.our_advantages_item
+		.some-logo
+			min-height: 250px
+			.logo-some-company
+				width: 88px
+				height: 90px
+			.apple
+				top: 73px
+				left: 126px
+				img
+					top: 15px
+					left: 22px
+					width: 37px
+			.blackBerry
+				left: 42px
+				top: 25px
+				img
+					left: 11px
+					top: 33px
+					width: 62px
+			.hts
+				top: -18px
+				left: 123px
+				img
+					top: 17px
+					left: 8px
+					width: 71px
+			.lg
+				top: 109px
+				right: 46px
+				img
+					left: 13px
+					top: 30px
+					width: 56px	
+	
+			.nokia
+				left: 127px
+				top: 164px
+				img
+					left: 10px
+					top: 34px
+					width: 66px
+			.palm
+				left: 43px
+				top: 115px
+				img
+					left: 14px
+					top: 30px
+					width: 58px
+			.samsung
+				right: 42px
+				top: 15px
+				img
+					top: 33px
+					left: 10px
+					width: 63px
 
 
+	.our_advantages_title
+		font-size: 15px
+		.title-left-indent-1
+			margin-top: 63px 
+			padding-right: 8px
+		.title-left-indent-2
+			padding-bottom: 23px
+			margin-top: 70px
+		.title-left-indent-3
+			margin-top: 98px
+			padding-right: 17px
+			word-spacing: 3px
+		.title-right-indent-1
+			margin-top: 64px
+			padding-left: 39px
+		.title-right-indent-2
+			margin-top: 103px
+			padding-left: 41px
+		.tittle-left
+			&:after
+				transform: scale(0.75)
+				right: -89px
+			&:before
+				transform: scale(0.75)
+				left: -20px
+			.second-title
+				margin-top: 27px
+		.tittle-right
+			&:after
+				transform: rotate(180deg) scale(0.75)
+				right: 38px
+				bottom: -30px
+			&:before
+				transform: rotate(180deg) scale(0.75)
+				top: -26px
+				left: -50px
 
+
+	.our_advantages_item-row-3
+		margin-bottom: 67px
 	.header_logo
 		display: block
 	.header_modal
 		margin-top: 40px
 	
+
+
+	.create-cover-title
+		font-size: 18px
+		margin-top: 47px
+		margin-bottom: 44px
+	.accordion_title
+		font-size: 12px
+		padding: 10px 40px
+		line-height: 14px
+		min-height: 43px
+		.arrow
+			top: 14px
+			right: 7px
+			transform: scale(0.8)
+	.constructor-area-container 
+		.functions-container
+			min-height: 406px
+			width: 157px
+		.add-files-container
+			width: 138px
+			.or
+				font-size: 9px
+				margin-left: 14px
+				margin-top: 0px
+				margin-bottom: -2px
+		.functions-title
+			margin-top: 18px
+			font-size: 12px
+			margin-bottom: 12px
+		.add-foto-form
+			margin-left: 13px
+			position: relative
+			padding-bottom: 7px
+			.disk
+				@include sprite($disk-mob)
+				transform: scale(0.8)
+				position: absolute
+				left: 17px
+			.disk-text
+				margin-top: -5px
+				padding-left: 45px
+				padding-right: 13px
+				line-height: 15px
+			.instagram
+				@include sprite($instogram-mob)
+				transform: scale(0.8)
+				position: absolute
+				left: 13px
+				top: 10px
+			.instagram-text
+				margin-top: -5px
+				padding-left: 45px
+				padding-right: 13px
+				line-height: 16px
+			.vk
+				@include sprite($vk-mob)
+				transform: scale(0.8)
+				position: absolute
+				top: 15px
+				left: 12px
+			.vk-text
+				margin-top: -5px
+				padding-left: 45px
+				padding-right: 13px
+				line-height: 16px
+		.to-order-container 
+			.name-phone
+				font-size: 14px
+				margin-bottom: -2px
+			.price
+				font-size: 16px
+				margin-bottom: 6px
+			.to-order
+				padding: 8px 0 11px
+		.want
+			bottom: 18px
+			left: 22px
+			font-size: 12px
+			&:before
+				transform: scale(0.8)
+				left: 1px
+
+
+	.some-constructor
+		left: 116px
+		top: 14px
+		.phone-foto 
+			height: 358px
+			.your-name
+				right: 196px
+				top: 79px
+				height: 116px
+				width: 239px
+				&:before
+					transform: rotate(90deg) scale(0.75)
+					right: 26px
+					bottom: -53px
+			.model-foto
+				bottom: 0px
+				right: 162px
+				height: 260px
+
+
+	.intermediate 
+		.intermediate-title
+			font-size: 18px
+			margin-top: 70px
+			margin-bottom: 46px
+			p
+				display: inline-block 
+		.foto-container
+			img
+				height: 96px
+				margin-bottom: 10px
+		.intermediate-form-container 
+			.get-discount
+				font-size: 14px
+				padding: 6px 61px
+				margin-bottom: 11px
+			.subscribe-insta,
+			.subscribe-insta-2
+				padding-left: 63px
+				.numder
+					padding: 13px 13px
+					font-size: 11px
+				.text
+					font-size: 12px
+					padding: 12px 0 13px
+			.subscribe-insta
+				margin-bottom: 13px
+			.subscribe-insta-2
+				margin-bottom: 12px
+	#form 
+		input
+			height: 42px
+			margin-bottom: 13px
+			padding-left: 7px
+			&::-webkit-input-placeholder
+				font-size: 12px
+			&:-moz-placeholder
+				font-size: 12px
+			&::-moz-placeholder
+				font-size: 12px
+			&:-ms-input-placeholder
+				font-size: 12px
+
+
+
+	.delivery-scheme-section 
+		.title
+			font-size: 18px
+			margin-top: 60px
+			margin-bottom: 47px
+		.delivery-scheme-title
+			font-size: 14px
+			padding: 7px 0 13px
+			margin-bottom: 12px
+		.delivery-scheme-item-1,
+		.delivery-scheme-item-2
+			&.point
+				&:before
+					@include sprite($point)
+					transform: scale(0.7)
+					top: -17px
+				&:after
+					@include sprite($point)
+					transform: scale(0.7)
+					bottom: -17px
+		.delivery-scheme-item-1
+			margin-bottom: 12px
+			.content
+				padding: 26px 0
+			.indent-1
+				padding: 3px 14px
+			.indent-2
+				padding: 10px 4px
+
+				span
+					margin-left: 22px
+		.delivery-scheme-item-2
+			margin-bottom: 12px
+			.content
+				padding: 26px 0
+			.indent-3	
+				padding: 18px 0
+		.box
+			&:before
+				transform: scale(0.8)
+			
+		.box-2
+			&:before
+				transform: scale(0.8)
+				
+		.clock
+			&:before
+				transform: scale(0.8)
+				left: -39px
+				top: -8px
+				
+		.card
+			&:before
+				transform: scale(0.8)
+				left: -38px
+				top: 17px
+				
+		.get
+			&:before
+				transform: scale(0.8)
+				left: -33px
+				
+		.procent
+			&:before
+				transform: scale(0.8)
+				left: -27px
+				top: 10px		
+		.good
+			&:before
+				transform: scale(0.8)
+				left: -33px
+				top: -1px
+		.wholesale-price-container 
+			padding: 0
+			margin: 18px auto auto
+			.discuss-lable		
+				font-size: 13px
+			.discuss
+				margin: 0 15px
+				padding: 9px 0 12px
+
+
+
+	.book-cover-section 
+		.title
+			font-size: 18px
+			margin-top: 72px
+			margin-bottom: 36px
+		.form-aside-container
+			padding-right: 0
+			padding-left: 6px
+			#form
+				padding-right: 25px
+				input
+					margin-bottom: 4px
+		.form-aside
+			margin-bottom: 0px
+			b
+				font-size: 16px
+			p
+				font-size: 12px
+		.foto-container 
+			margin-top: 11px
+			padding-left: 47px
+			img
+				margin-bottom: 10px
+				height: 107px
+	.footer
+		padding-top: 139px
+		margin-top: 0
+		.develp-company 
+			margin-top: 20px	
+			padding-right: 55px
+			a
+				&:before
+					transform: scale(0.7)
+					right: -39px
+					top: -9px
+		.footer-container
+			padding-bottom: 32px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
+	.header
+		background-position: center bottom
+		background: #ce93bf
+		position: relative
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			z-index: 1
+			background: url(../img/image-.png) no-repeat
+			width: 100%
+			height: 100px
+			background-position: center top
+			bottom: 0px
+	.header-tel-back
+		text-align: center
+	.header_nav
+		display: none
+	.button-mobile-menu
+		display: block
+	.our_advantages_item
+		width: 375px
+		height: 250px
+	.mockup-container
+		width: 472px
+		height: 670px
+		margin: auto
+		img
+			height: 370px
+		.mockup-img1
+			right: 24px
+		.mockup-img2
+			right: 30px
+		.mockup-price 
+			span
+				font-size: 24px
+				padding: 39px 13px
+	.go-to-constructor-container
+		width: 180px
+		margin: auto
+		&:before
+			transform: rotate(92deg) scale(1,-1)
+			right: 136px
+			top: 200px
+		.go-to-constructor-img 
+			.name-img,
+			.foto-img
+				height: 150px	
+			.foto-img
+				right: 20px
+			.name-img
+				margin-left: -128px	
+	.order
+		bottom: 96px
+		left: 153px
+		width: 228px
+		p
+			font-size: 15px
+			margin-bottom: 10px
+		.go-to-constructor-button
+			padding: 17px 20px
+			font-size: 15px
+	.header-main-aside
+		margin-bottom: 45px
+
+
+	.our_advantages
+		.flex-mob
+			display: flex
+			flex-flow: row wrap
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -522,9 +1031,13 @@
 			margin-top: 40px
 	.header_modal
 		margin-top: 40px
-	[off-canvas*=left]
-		width: 255px
 
+@media only screen and (max-width : 570px)
+	.mockup-container
+		width: 200px
+		height: 360px
+	.header
+		min-height: auto
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 520px)
 	/**/
@@ -576,7 +1089,7 @@
 
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
+@media only screen and (min-width : 1201px)
 	.container
 		width: 1200px
 

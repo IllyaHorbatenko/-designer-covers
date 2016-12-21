@@ -31,30 +31,42 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 // Оформление слайдбара
-[off-canvas]
-	transition: transform 0.4s
-	overflow: auto
-[off-canvas*=left]
-	width: 250px
-[canvas=container]
-	background-color: transparent
-nav[canvas]
-	position: fixed	
-	top: 20px
-	left: 20px
+
+
+.button-mobile-menu
 	display: none
-	z-index: 100
-[class*=js-open-], [class*=js-toggle-], [class*=js-close-]
-	cursor: pointer
-[off-canvas]
-	ul
-		&.menu
-			margin: 0
-			padding: 0
-			display: block
-			list-style: none
-
-
+	padding: 0 10px
+	margin-right: 4px
+	float: right
+	margin-top: 8px
+	transition: left .5s
+	span
+		display: block
+		background: #fff
+		width: 31px
+		height: 5px
+		border-radius: 10px
+		position: absolute
+		right: 0px
+		transition: .5s
+		margin: 21px 19px 0px 0
+		&.left
+			top: 0
+		&.center
+			top: 10px
+		&.right
+			top: 20px
+	&.active
+		.center
+			background: transparent
+		.left
+			transform: rotate(45deg)
+			position: absolute
+			top: 10px
+		.right
+			transform: rotate(-45deg)
+			position: absolute
+			top: 10px
 
 // Секция our_advantages
 .our_advantages
@@ -291,7 +303,7 @@ nav[canvas]
 	&.active
 		background: #fff
 		border-radius: 4px 4px 0 0
-	span
+	.arrow
 		position: absolute
 		top: 17px
 		right: 24px
@@ -310,7 +322,6 @@ nav[canvas]
 		position: absolute
 		bottom: 28px
 		left: 61px
-		word-spacing: 8px
 		font-size: 15px
 		color: #3c3c3c
 		text-decoration: underline
