@@ -1,5 +1,4 @@
 .owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}
-.fa-fw,.fa-li,.fa-stack-1x,.fa-stack-2x,.main_content,.our_advantages .our_advantages_item .our_advantages_item_img,.our_advantages h2{text-align:center}
 .animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
 .animated.hinge{-webkit-animation-duration:2s;animation-duration:2s}
@@ -675,11 +674,11 @@
 .fa-3x{font-size:3em}
 .fa-4x{font-size:4em}
 .fa-5x{font-size:5em}
-.fa-fw{width:1.28571429em}
+.fa-fw{width:1.28571429em;text-align:center}
 .fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}
 .fa.fa-pull-right,.fa.pull-right{margin-left:.3em}
 .fa-ul>li{position:relative}
-.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em}
+.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}
 .fa-li.fa-lg{left:-1.85714286em}
 .fa-border{padding:.2em .25em .15em;border:.08em solid #eee;-webkit-border-radius:.1em;border-radius:.1em}
 .fa-pull-left{float:left}
@@ -703,7 +702,7 @@
 .fa-flip-vertical{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";-webkit-transform:scale(1,-1);-ms-transform:scale(1,-1);transform:scale(1,-1)}
 :root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}
 .fa-stack{position:relative;width:2em;height:2em;line-height:2em;vertical-align:middle}
-.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%}
+.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}
 .fa-stack-1x{line-height:inherit}
 .fa-stack-2x{font-size:2em}
 .fa-inverse{color:#fff}
@@ -1385,8 +1384,10 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .button-mobile-menu.active .left{-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);position:absolute;top:10px}
 .button-mobile-menu.active .right{-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);position:absolute;top:10px}
 .our_advantages{min-height:630px;background-color:#fff}
-.our_advantages h2{margin-top:75px;color:#626262;font-size:35px}
+.our_advantages h2{margin-top:75px;color:#626262;text-align:center;font-size:35px}
+.our_advantages .our_advantages_item .our_advantages_item_img{text-align:center}
 .our_advantages .our_advantages_item .our_advantages_item_img i{font-size:72px;color:#00b6f4}
+.main_content{text-align:center}
 .our_advantages_item .some-logo{min-height:410px;position:relative}
 .our_advantages_item .some-logo .logo-some-company{position:absolute;width:136px;height:140px;border:3px dotted #ce93bf;-webkit-border-radius:50%;border-radius:50%;text-align:center}
 .our_advantages_item .some-logo .apple{top:130px;left:192px}
@@ -1404,22 +1405,17 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .our_advantages_item .some-logo .samsung{right:104px;top:37px}
 .our_advantages_item .some-logo .samsung img{position:absolute;top:55px;left:20px}
 .our_advantages_title{font-size:24px;text-transform:uppercase;line-height:1.5}
-.our_advantages_title h4{position:relative}
+.our_advantages_title h4{position:relative;margin:23px 0;padding:23px 27px;width:auto}
 .our_advantages_title .tittle-left:after,.our_advantages_title .tittle-left:before{content:"";background-image:url(../img/sprite.png);height:54px;display:inline-block;position:absolute}
 .our_advantages_title h4 p{text-align:left}
 .our_advantages_title h4 b{color:#ce93bf}
 .our_advantages_title .tittle-left{float:right;margin-top:114px}
-.our_advantages_title .tittle-left:before{background-position:-465px -99px;width:53px;top:-26px;left:-23px}
-.our_advantages_title .tittle-left:after{background-position:0 0;width:674px;bottom:-28px;right:6px}
+.our_advantages_title .tittle-left:before{background-position:-465px -99px;width:53px;left:0;top:0}
+.our_advantages_title .tittle-left:after{background-position:0 0;width:674px;right:0;bottom:0}
 .our_advantages_title .tittle-left .second-title{margin-top:35px;display:block}
 .our_advantages_title .tittle-right:after,.our_advantages_title .tittle-right:before{content:"";background-image:url(../img/sprite.png);height:54px;display:inline-block;position:absolute}
-.our_advantages_title .title-left-indent-1{padding-right:27px}
-.our_advantages_title .title-left-indent-2{padding-right:50px;padding-left:11px}
-.our_advantages_title .title-left-indent-3{margin-top:168px;padding-right:84px;padding-left:22px}
-.our_advantages_title .tittle-right:before{background-position:0 0;width:674px;transform:rotate(180deg);top:-27px;left:25px}
-.our_advantages_title .tittle-right:after{background-position:-465px -99px;width:53px;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);right:90px;bottom:-31px}
-.our_advantages_title .title-right-indent-1{margin-top:100px;padding-left:55px}
-.our_advantages_title .title-right-indent-2{margin-top:167px;padding-left:62px}
+.our_advantages_title .tittle-right:before{background-position:0 0;width:674px;transform:rotate(180deg);top:0;left:0}
+.our_advantages_title .tittle-right:after{background-position:-465px -99px;width:53px;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);right:0;bottom:0}
 .our_advantages_item .some-foto-1{padding-left:9px}
 .our_advantages_item .some-foto-2{padding-left:51px;padding-top:39px}
 .our_advantages_item .some-foto-3{padding-left:9px}
@@ -1552,17 +1548,12 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .mockup-container img{height:357px}
 .mockup-container .mockup-price{top:47px;right:2px}
 .mockup-container .mockup-price span{font-size:24px;padding:39px 13px}
-.our_advantages_title .tittle-left:before{background-image:url(../img/sprite.png);background-position:-518px -99px;width:44px;height:46px;top:-26px;left:-23px}
+.our_advantages_title .tittle-left:before{background-image:url(../img/sprite.png);background-position:-518px -99px;width:44px;height:46px}
 .our_advantages_title .tittle-left:after,.our_advantages_title .tittle-right:before{background-position:0 -54px;width:557px;height:45px;background-image:url(../img/sprite.png)}
-.our_advantages_title .tittle-left:after{bottom:-28px;right:-15px}
-.our_advantages_title .tittle-right:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);top:-27px;left:25px}
-.our_advantages_title .tittle-right:after{background-image:url(../img/sprite.png);background-position:-518px -99px;width:44px;height:46px;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);right:90px;bottom:-31px}
+.our_advantages_title .tittle-right:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.our_advantages_title .tittle-right:after{background-image:url(../img/sprite.png);background-position:-518px -99px;width:44px;height:46px;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
 .our_advantages_title .title-right-indent-1{margin-top:85px;padding-left:47px}
 .our_advantages_title{font-size:19px}
-.our_advantages_title .title-left-indent-1{padding-right:0;margin-top:107px}
-.our_advantages_title .title-left-indent-2{margin-top:100px}
-.our_advantages_title .title-right-indent-2{margin-top:138px}
-.our_advantages_title .title-left-indent-3{margin-top:126px;padding-right:38px;word-spacing:3px}
 .our_advantages_item .some-foto-1 img{height:276px}
 .our_advantages_item .some-foto-2 img{height:268px}
 .our_advantages_item .some-foto-3 img{height:273px}
@@ -1659,9 +1650,10 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .footer .footer-nav li:last-child{margin-right:0}
 .footer .develp-company{margin-top:23px;padding-right:72px}
 .footer .develp-company a:before{right:-49px;top:-12px;background-image:url(../img/sprite.png);background-position:-557px -54px;width:50px;height:41px}
-.order{bottom:-233px;left:-268px;width:217px}
+.order{bottom:-338px;left:-204px;width:217px}
 .order p{font-size:15px}
 .order .go-to-constructor-button{padding:11px 18px;font-size:13px}
+.mockup-container{padding-top:0}
 }
 @media only screen and (max-width:992px){.header_logo a h1{font-size:27px;margin:0 0 0 18px}
 .header{min-height:475px;margin-bottom:0}
@@ -1671,7 +1663,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .header-main-aside aside{padding-left:17px}
 .header-main-aside aside h3{font-size:16px;margin-bottom:16px}
 .header-main-aside aside p,.order p{font-size:14px}
-.order{bottom:-142px;left:-153px;width:158px}
+.order{bottom:-271px;left:-153px;width:158px}
 .order p{text-align:left;margin-bottom:5px}
 .order .go-to-constructor-button{font-size:12px;padding:10px 4px}
 .go-to-constructor-container .go-to-constructor-img{margin-bottom:7px;margin-top:16px;padding-bottom:40px}
@@ -1707,17 +1699,13 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .our_advantages_item .some-logo .palm img{left:14px;top:30px;width:58px}
 .our_advantages_item .some-logo .samsung{right:42px;top:15px}
 .our_advantages_item .some-logo .samsung img{top:33px;left:10px;width:63px}
-.our_advantages_title{font-size:15px}
-.our_advantages_title .title-left-indent-1{margin-top:63px;padding-right:8px}
-.our_advantages_title .title-left-indent-2{padding-bottom:23px;margin-top:70px}
-.our_advantages_title .title-left-indent-3{margin-top:98px;padding-right:17px;word-spacing:3px}
-.our_advantages_title .title-right-indent-1{margin-top:64px;padding-left:39px}
-.our_advantages_title .title-right-indent-2{margin-top:103px;padding-left:41px}
-.our_advantages_title .tittle-left:after{-webkit-transform:scale(.75);-ms-transform:scale(.75);transform:scale(.75);right:-89px}
-.our_advantages_title .tittle-left:before{-webkit-transform:scale(.75);-ms-transform:scale(.75);transform:scale(.75);left:-20px}
+.our_advantages_title{font-size:15px;max-width:320px;margin:auto;margin-padding:23px 27px}
+.our_advantages_title h4{margin:23px 0;padding:23px 27px;width:auto}
+.our_advantages_title .tittle-left:before,.our_advantages_title .tittle-right:before{left:0;top:0}
+.our_advantages_title .tittle-left:after,.our_advantages_title .tittle-right:after{right:0;bottom:0}
+.our_advantages_title .tittle-left:after,.our_advantages_title .tittle-left:before{-webkit-transform:scale(.75);-ms-transform:scale(.75);transform:scale(.75)}
 .our_advantages_title .tittle-left .second-title{margin-top:27px}
-.our_advantages_title .tittle-right:after{-webkit-transform:rotate(180deg) scale(.75);-ms-transform:rotate(180deg) scale(.75);transform:rotate(180deg) scale(.75);right:38px;bottom:-30px}
-.our_advantages_title .tittle-right:before{-webkit-transform:rotate(180deg) scale(.75);-ms-transform:rotate(180deg) scale(.75);transform:rotate(180deg) scale(.75);top:-26px;left:-50px}
+.our_advantages_title .tittle-right:after,.our_advantages_title .tittle-right:before{-webkit-transform:rotate(180deg) scale(.75);-ms-transform:rotate(180deg) scale(.75);transform:rotate(180deg) scale(.75)}
 .our_advantages_item-row-3{margin-bottom:67px}
 .header_logo{display:block}
 .header_modal{margin-top:40px}
@@ -1793,12 +1781,11 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .footer .develp-company a:before{-webkit-transform:scale(.7);-ms-transform:scale(.7);transform:scale(.7);right:-39px;top:-9px}
 .footer .footer-container{padding-bottom:32px}
 }
-@media only screen and (max-width:768px){.header{background:#ce93bf;position:relative}
+@media only screen and (max-width:768px){.header-tel-back,.img-container,.our_advantages_item .some-foto,.our_advantages_item .some-foto-2{text-align:center}
+.header{background:#ce93bf;position:relative}
 .header:after{content:'';display:block;position:absolute;z-index:1;background:url(../img/image-.png) center top no-repeat;width:100%;height:100px;bottom:0}
-.header-tel-back{text-align:center}
 .header_nav{display:none}
 .button-mobile-menu{display:block}
-.our_advantages_item{width:375px;height:250px}
 .mockup-container{width:472px;height:670px;margin:auto}
 .mockup-container img{height:370px}
 .mockup-container .mockup-img1{right:24px}
@@ -1814,18 +1801,85 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .order .go-to-constructor-button{padding:17px 20px;font-size:15px}
 .header-main-aside{margin-bottom:45px}
 .our_advantages .flex-mob{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap}
+.our_advantages_item{width:450px;height:auto;margin:auto}
+.our_advantages_item.order-item-1{-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1}
+.our_advantages_item.order-item-2{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2}
+.our_advantages_item .some-logo{width:300px;margin:auto}
+.our_advantages_item .some-logo .samsung{left:210px}
+.our_advantages_item .some-logo .lg{left:213px}
+.our_advantages_item .some-foto-2{width:300px;margin:auto;padding:0}
+.our_advantages_item .some-foto-4{width:337px;margin:auto}
+.our_advantages_title .tittle-left:after,.our_advantages_title .tittle-right:before{background-position:-465px -99px;width:53px;height:54px;background-image:url(../img/sprite.png)}
+.our_advantages_title{margin-bottom:50px;font-size:18px}
+.our_advantages_title .tittle-left{float:none}
+.our_advantages_title .tittle-left:after{-webkit-transform:rotate(180deg) scale(.6);-ms-transform:rotate(180deg) scale(.6);transform:rotate(180deg) scale(.6)}
+.our_advantages_title h4{padding-left:50px}
+.our_advantages_title .tittle-right:before{-webkit-transform:scale(.6);-ms-transform:scale(.6);transform:scale(.6)}
+.accordion-container{max-width:250px;float:left}
+.constructor-container{width:-webkit-calc(100% - 250px);width:calc(100% - 250px);float:right;min-width:350px}
+.some-constructor{left:91px;top:-3px}
+.some-constructor .phone-foto{height:327px;width:282px}
+.some-constructor .phone-foto .your-name{right:200px;top:72px;height:104px;width:212px}
+.some-constructor .phone-foto .your-name:before{right:-2px}
+.some-constructor .phone-foto .model-foto{bottom:46px;right:182px;height:212px}
+.constructor-area-container .add-foto-form{margin-left:0;font-size:10px}
+.constructor-area-container .add-foto-form .disk,.constructor-area-container .add-foto-form .instagram,.constructor-area-container .add-foto-form .vk{-webkit-transform:scale(.7);-ms-transform:scale(.7);transform:scale(.7)}
+.constructor-area-container .add-files-container{width:115px}
+.constructor-area-container .functions-title{font-size:11px}
+.constructor-area-container .functions-title .second{font-size:9px}
+.constructor-area-container .to-order-container .to-order{font-size:12px}
+.constructor-area-container .functions-container{width:150px}
+.foto-container img{margin-bottom:0}
+.img-item{display:inline-block;padding:0 5px;margin-bottom:10px}
+.img-container{display:block}
+.delivery-scheme-section .delivery-scheme-title{margin-left:15px;margin-right:15px}
+.delivery-scheme-section .delivery-scheme-item-1{padding-left:15px}
+.delivery-scheme-section .delivery-scheme-item-1 .indent-1,.delivery-scheme-section .delivery-scheme-item-1 .indent-2{padding:20px 75px}
+.delivery-scheme-section .delivery-scheme-item-1 .content p{display:inline}
+.delivery-scheme-section .delivery-scheme-item-1 .content span:before{left:-45px;top:3px}
+.delivery-scheme-section .delivery-scheme-item-1 .content .box:before{top:-9px}
+.delivery-scheme-section .delivery-scheme-item-2,.delivery-scheme-section .max{padding-right:15px}
+.delivery-scheme-section .delivery-scheme-item-2 .indent-3:before,.delivery-scheme-section .max .indent-3:before{content:'';background-image:url(../img/sprite.png);background-position:-26px -257px;width:3px;height:21px;display:inline-block;position:absolute;bottom:48px;-webkit-transform:scale(.7);-ms-transform:scale(.7);transform:scale(.7);left:0;right:0;margin:auto}
+.delivery-scheme-section .delivery-scheme-item-2 .content p,.delivery-scheme-section .max .content p{display:inline}
+.delivery-scheme-section .delivery-scheme-item-2 .content span:before,.delivery-scheme-section .max .content span:before{left:-45px;top:-8px}
+.book-cover-section .form-aside,.book-cover-section .form-aside-container #form{padding-right:25px;padding-left:25px}
 .animated{-webkit-transition-property:none!important;transition-property:none!important;-ms-transform:none!important;-webkit-transform:none!important;transform:none!important;-webkit-animation:none!important;animation:none!important}
 .header_title h1{font-size:30px;margin-top:40px}
 .header_modal{margin-top:40px}
 }
-@media only screen and (max-width:570px){.mockup-container{width:200px;height:360px}
-.header{min-height:auto}
+@media only screen and (max-width:600px){.accordion-container{max-width:100%;float:none}
+.constructor-container{width:100%;float:none;min-width:100%}
+.some-constructor{left:0}
+.some-constructor .phone-foto{left:0;width:200px}
+.some-constructor .phone-foto .model-foto{right:0}
+.some-constructor .phone-foto .your-name{left:-36px}
+.constructor-area-container{position:relative}
+}
+@media only screen and (max-width:570px){.header{min-height:auto}
+.book-cover-section .foto-container{padding:0}
+.go-to-constructor-container .go-to-constructor-img .foto-img,.go-to-constructor-container .go-to-constructor-img .name-img{height:100px}
+.go-to-constructor-container .go-to-constructor-img .name-img{margin-left:-55px}
+.go-to-constructor-container .go-to-constructor-img .foto-img{right:35px}
+.go-to-constructor-container:before{-webkit-transform:rotate(90deg) scale(.75,-.75);-ms-transform:rotate(90deg) scale(.75,-.75);transform:rotate(90deg) scale(.75,-.75);right:99px;top:138px}
+.mockup-container{width:200px;height:520px}
+.mockup-container img{height:269px}
+.mockup-container .mockup-img1{left:40px;top:16px}
+.mockup-container .mockup-img2{right:-65px;top:39px}
+.mockup-container .mockup-price{top:-22px;right:-62px}
+.mockup-container .mockup-price span{font-size:18px;padding:26px 7px}
+.order{bottom:85px;left:38px;width:160px}
+.order p{font-size:14px}
+.order .go-to-constructor-button{padding:11px 18px;font-size:12px}
+.our_advantages_title{font-size:15px}
+.footer .footer-nav li{display:block}
 }
 @media only screen and (max-width:520px){.dm-modal,.dm-modal input[type=submit]{width:100%}
 }
 @media only screen and (max-width:480px){.header_title h1{font-size:26px}
 .modal_form_input_wrap .modal_input_error{right:0}
 .intermediate .intermediate_title h3{font-size:20px}
+}
+@media only screen and (max-width:375px){.book-cover-section .mob-setting,.intermediate .mob-setting{display:none}
 }
 @media only screen and (min-width:1201px){.container{width:1200px}
 }

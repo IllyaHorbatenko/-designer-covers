@@ -95,40 +95,20 @@
 		.tittle-left
 			&:before
 				@include sprite($figure-up-mob)
-				top: -26px
-				left: -23px
 			&:after
 				@include sprite($dotted-line-mob)
-				bottom: -28px
-				right: -15px
 		.tittle-right
 			&:before
-		
 				@include sprite($dotted-line-mob)
 				transform: rotate(180deg)
-				top: -27px
-				left: 25px
 			&:after
 				@include sprite($figure-up-mob)
 				transform: rotate(180deg)
-				right: 90px
-				bottom: -31px
 		.title-right-indent-1
 			margin-top: 85px
 			padding-left: 47px
 	.our_advantages_title
 		font-size: 19px
-		.title-left-indent-1
-			padding-right: 0
-			margin-top: 107px
-		.title-left-indent-2
-			margin-top: 100px	
-		.title-right-indent-2 
-			margin-top: 138px
-		.title-left-indent-3
-			margin-top: 126px
-			padding-right: 38px
-			word-spacing: 3px
 	.our_advantages_item
 		.some-foto-1
 			img
@@ -451,14 +431,17 @@
 					@include sprite($logo-footer-mob)
 
 	.order
-		bottom: -233px
-		left: -268px
+		bottom: -338px
+		left: -204px
 		width: 217px
 		p
 			font-size: 15px
 		.go-to-constructor-button
 			padding: 11px 18px
 			font-size: 13px
+	
+	.mockup-container
+		padding-top: 0
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -495,7 +478,7 @@
 				font-size: 14px
 
 	.order
-		bottom: -142px
+		bottom: -271px
 		left: -153px
 		width: 158px
 		p
@@ -620,41 +603,34 @@
 
 	.our_advantages_title
 		font-size: 15px
-		.title-left-indent-1
-			margin-top: 63px 
-			padding-right: 8px
-		.title-left-indent-2
-			padding-bottom: 23px
-			margin-top: 70px
-		.title-left-indent-3
-			margin-top: 98px
-			padding-right: 17px
-			word-spacing: 3px
-		.title-right-indent-1
-			margin-top: 64px
-			padding-left: 39px
-		.title-right-indent-2
-			margin-top: 103px
-			padding-left: 41px
+		max-width: 320px
+		margin: auto 
+			padding: 23px 27px
+		h4
+			margin: 23px 0
+			padding-left: 43px
+			padding: 23px 27px
+			width: auto
+		.tittle-left,
+		.tittle-right
+			&:before
+				left: 0
+				top: 0
+			&:after
+				right: 0
+				bottom: 0
 		.tittle-left
 			&:after
 				transform: scale(0.75)
-				right: -89px
 			&:before
 				transform: scale(0.75)
-				left: -20px
 			.second-title
 				margin-top: 27px
 		.tittle-right
 			&:after
 				transform: rotate(180deg) scale(0.75)
-				right: 38px
-				bottom: -30px
 			&:before
 				transform: rotate(180deg) scale(0.75)
-				top: -26px
-				left: -50px
-
 
 	.our_advantages_item-row-3
 		margin-bottom: 67px
@@ -954,9 +930,6 @@
 		display: none
 	.button-mobile-menu
 		display: block
-	.our_advantages_item
-		width: 375px
-		height: 250px
 	.mockup-container
 		width: 472px
 		height: 670px
@@ -1004,6 +977,155 @@
 		.flex-mob
 			display: flex
 			flex-flow: row wrap
+	.our_advantages_item 
+		width: 450px
+		height: auto
+		margin: auto
+		&.order-item-1
+			order: 1
+		&.order-item-2
+			order: 2
+		.some-logo
+			width: 300px
+			margin: auto
+
+			.samsung
+				left: 210px
+			.lg
+				left: 213px
+		.some-foto-2,
+		.some-foto
+			text-align: center
+		.some-foto-2
+			width: 300px
+			margin: auto
+			padding: 0
+		.some-foto-4
+			width: 337px
+			margin: auto
+	.our_advantages_title
+		margin-bottom: 50px
+		font-size: 18px 
+		.tittle-left
+			float: none
+			&:after
+				@include sprite($figure-up)
+				transform: rotate(180deg) scale(0.6)
+
+		h4
+			padding-left: 50px
+		.tittle-right
+			&:before
+				@include sprite($figure-up)
+				transform: scale(0.6)
+		
+	.accordion-container
+		max-width: 250px
+		float: left
+	.constructor-container
+		width: calc(100% - 250px)
+		float: right
+		min-width: 350px
+
+	.some-constructor 
+		left: 91px
+		top: -3px
+		.phone-foto
+			height: 327px
+			width: 282px
+			.your-name
+				right: 200px
+				top: 72px
+				height: 104px
+				width: 212px
+				&:before
+					right: -2px
+			.model-foto
+				bottom: 46px
+				right: 182px
+				height: 212px
+
+	.constructor-area-container 
+		.add-foto-form
+			margin-left: 0
+			font-size: 10px
+			.disk,
+			.instagram,
+			.vk
+				transform: scale(0.7)
+		.add-files-container
+			width: 115px
+		.functions-title 
+			font-size: 11px
+			.second
+				font-size: 9px
+		.to-order-container 
+			.to-order
+				font-size: 12px
+		.functions-container
+			width: 150px
+
+
+	.foto-container 
+		img
+			margin-bottom: 0
+	.img-item
+		display: inline-block
+		padding: 0 5px
+		margin-bottom: 10px 
+	.img-container
+		display: block
+		text-align: center
+
+	.delivery-scheme-section 
+		.delivery-scheme-title
+			margin-left: 15px
+			margin-right: 15px
+		.delivery-scheme-item-1
+			padding-left: 15px
+			.indent-1,
+			.indent-2
+				padding: 20px 75px
+			.content
+				p
+					display: inline
+				span
+					&:before
+						left: -45px
+						top: 3px
+				.box
+					&:before
+						top: -9px
+		.delivery-scheme-item-2,
+		.max
+			padding-right: 15px
+			.indent-3
+				&:before
+					content: ''
+					@include sprite($point)
+					display: inline-block
+					position: absolute
+					bottom: 48px
+					transform: scale(0.7)
+					left: 0
+					right: 0
+					margin: auto
+			.content
+				p
+					display: inline
+				span
+					&:before
+						left: -45px
+						top: -8px
+	.book-cover-section 
+		.form-aside-container 
+			#form
+				padding-right: 25px
+				padding-left: 25px
+		.form-aside
+			padding-right: 25px
+			padding-left: 25px
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -1031,13 +1153,82 @@
 			margin-top: 40px
 	.header_modal
 		margin-top: 40px
+@media only screen and (max-width : 600px)
+	.accordion-container
+		max-width: 100%
+		float: none
+
+	.constructor-container
+		width: 100%
+		float: none
+		min-width: 100%
+	.some-constructor
+		left: 0
+		.phone-foto
+			left: 0
+			width: 200px
+			.model-foto
+				right: 0
+			.your-name
+				left: -36px
+	.constructor-area-container
+		position: relative
+
 
 @media only screen and (max-width : 570px)
-	.mockup-container
-		width: 200px
-		height: 360px
 	.header
 		min-height: auto
+	.book-cover-section 
+		.foto-container
+			padding: 0
+
+
+	.go-to-constructor-container 
+		.go-to-constructor-img 
+			.foto-img,
+			.name-img
+				height: 100px
+			.name-img
+				margin-left: -55px
+			.foto-img
+				right: 35px
+		&:before
+			transform: rotate(90deg) scale(.75,-.75)
+			right: 99px
+			top: 138px
+	.mockup-container
+		width: 200px
+		height: 520px
+		img
+			height: 269px
+		.mockup-img1
+			left: 40px
+			top: 16px
+		.mockup-img2
+			right: -65px
+			top: 39px
+		.mockup-price
+			top: -22px
+			right: -62px
+			span
+				font-size: 18px
+				padding: 26px 7px
+	.order
+		bottom: 85px
+		left: 38px
+		width: 160px
+		p
+			font-size: 14px
+		.go-to-constructor-button
+			padding: 11px 18px
+			font-size: 12px
+	.our_advantages_title
+		font-size: 15px
+	
+	.footer 
+		.footer-nav 
+			li
+				display: block
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 520px)
 	/**/
@@ -1047,6 +1238,7 @@
 	.dm-modal
 		input[type=submit]
 			width: 100%
+
 @media only screen and (max-width : 480px)
 	/**/
 
@@ -1061,6 +1253,11 @@
 			h3
 				font-size: 20px
 
+@media only screen and (max-width : 375px)
+	.intermediate,
+	.book-cover-section
+		.mob-setting
+			display: none
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
