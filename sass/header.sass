@@ -106,12 +106,10 @@ html .loader
 	max-width: 50em
 	display: inline-block
 	padding: 50px 46px 50px 46px
-	border: 3px solid $main_color	
 	text-align: center
 	position: relative	
 	animation: fade .8s
 	background-color: #fff
-	border-radius: 20px
 	z-index: 1002
 	.modal_form_input_wrap
 		position: relative
@@ -123,7 +121,7 @@ html .loader
 			position: absolute
 			right: -25px
 			top: 40px
-			padding-left: 10px
+			padding-left: 20px
 			font: 15px/35px $font_MyriadPro_Regular
 			background-color: #F4F4F4
 			border: 1px solid #C8C8C8
@@ -148,12 +146,13 @@ html .loader
 			background-image: url('../img/modal_error_triangle.png')
 		.modal_error_chest_img
 			top: -33px
-			left: 0				
+			left: -12px			
 			height: 9px
 		.modal_error_triangle
 			top: -43px
 			left: 10px				
-			height: 8px			
+			height: 8px	
+					
 		
 
 	label
@@ -190,7 +189,7 @@ html .loader
 		margin-top: 20px
 		padding-left: 0
 		padding-right: 0
-		@extend %main_btn
+		//@extend %main_btn
 		&:hover
 			@extend %main_btn_hover		
 		&:active		
@@ -207,6 +206,184 @@ html .loader
 	height: 36px
 	display: block
 	background: url('../img/modal_close.png') 0 0 no-repeat
+
+.popup3
+	.dm-modal
+		width: auto
+		padding: 150px 46px
+		border-radius: 0
+		border: none
+	.add-file-area
+		width: 540px
+		height: 160px
+		border: 2px dotted #ce93bf
+		position: relative
+		.text
+			font-size: 16px
+			position: absolute
+			top: calc(50% - 20px)
+			left: 0
+			font-weight: 900
+			right: 0
+			margin: auto
+	.or
+		text-align: center
+		font-size: 15px
+		margin: 15px 0
+		font-weight: 900
+	.add-foto-form
+		background: #ff9800
+		display: block
+		padding: 19px 0 17px 33px
+		color: #fff
+		cursor: pointer
+		font-size: 14px
+		width: 300px
+		margin: auto
+		position: relative
+		span
+			display: inline-block
+		.disk
+			@include sprite($disk)
+			position: absolute
+			left: 15px
+			top: calc(50% - 13px)
+		.disk-text
+			margin-top: -2px
+			display: inline-block
+	.close
+		width: 33px
+		height: 41px
+		display: inline-block
+		background: transparent
+		right: 10px
+		top: 9px
+		span
+			width: 100%
+			position: absolute
+			height: 2px
+			background: #000
+			&.bottom
+				left: 3px
+				bottom: 22px
+				transform: rotate(48deg)
+			&.top
+				bottom: 23px
+				left: 2px
+				transform: rotate(-46deg)
+
+.popup4
+	.dm-modal
+		width: auto
+		padding: 70px 46px
+		border-radius: 0
+		border: none
+	.close
+		width: 33px
+		height: 41px
+		display: inline-block
+		background: transparent
+		right: 10px
+		top: 9px
+		span
+			width: 100%
+			position: absolute
+			height: 2px
+			background: #000
+			&.bottom
+				left: 3px
+				bottom: 22px
+				transform: rotate(48deg)
+			&.top
+				bottom: 23px
+				left: 2px
+				transform: rotate(-46deg)
+	.color-backround,
+	.colot-text
+		width: 298px
+		margin-bottom: 15px
+		p
+			text-align: left
+			font-size: 15px
+			font-weight: 900
+			padding-left: 17px
+			margin-bottom: 10px
+		span
+			display: inline-block
+			width: 27px
+			height: 27px
+			border: 2px solid transparent
+			margin: 1px
+			cursor: pointer
+			&:hover
+				border: 2px solid #ff9800
+			&.color-1
+				background: #ff0000
+			&.color-2
+				background: #00ff00
+			&.color-3
+				background: #fff324
+			&.color-4
+				background: #00b7f4
+			&.color-5
+				background: #df3464
+			&.color-6
+				background: #8783c0
+			&.color-7
+				background: #f655a0
+			&.color-8
+				background: #98315f
+			&.color-9
+				background: #292e64
+			&.color-10
+				background: #e8f4de
+			&.color-11
+				background: #6c6400
+			&.color-12
+				background: #fa917a
+			&.color-13
+				background: #976d49
+			&.color-14
+				background: #898989
+			&.color-15
+				background: #fa97c2
+			&.color-16
+				background: #00470c
+			&.color-17
+				background: #bea58c
+			&.color-18
+				background: #bd8cc1
+			&.color-19
+				background: #bd8cc1
+			&.color-20
+				background: #ffc087
+			&.color-21
+				background: #9dd298
+			&.color-22
+				background: #6b1200
+			&.color-23
+				background: #006889
+			&.color-24
+				background: #00f0ff
+			&.color-25
+				background: #00ff8a
+			&.color-26
+				background: #f000ff
+			&.color-27
+				background: #ff9c00
+	#form
+		input
+			height: 42px
+			border: 1px solid #deb7d4
+			border-radius: 0
+			background: transparent
+			box-shadow: none
+			&:focus
+				box-shadow: none
+		input[type=submit]
+			font-size: 13px
+			font-weight: 200
+
 // конец модального
 
 // всплывающие ошибки в формах
@@ -220,12 +397,10 @@ html .loader
 		position: absolute
 		right: -25px
 		top: 40px
-		padding-left: 10px
+		padding-left: 20px
 		font: 15px/35px $font_MyriadPro_Regular
 		background-color: #F4F4F4
 		border: 1px solid #C8C8C8
-		-webkit-border-radius: 5px
-		border-radius: 5px
 		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3)
 		box-shadow: 0 0 10px rgba(0,0,0,.3)
 		z-index: 100
@@ -245,7 +420,7 @@ html .loader
 		background-image: url('../img/modal_error_triangle.png')
 	.modal_error_chest_img
 		top: -33px
-		left: 0				
+		left: -12px				
 		height: 9px
 	.modal_error_triangle
 		top: -43px

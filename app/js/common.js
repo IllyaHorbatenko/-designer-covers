@@ -10,7 +10,18 @@ $(function() {
 $(window).resize(function() {
 
 });
+function buttonMobileMenu() {
+    var button = $('.button-mobile-menu'),
+        buttonMenu = $('.mobile-menu .close-but');
 
+    button.click(function() {
+        $(".mobile-menu").toggleClass("active");
+    });
+    buttonMenu.click(function() {
+        $(".mobile-menu").toggleClass("active");
+    });
+
+}
 //изменяется - для плавной обратной анимации animate.css*/
 $(window).scroll(function() {
 
@@ -51,26 +62,48 @@ if ('addEventListener' in document) {
 $(document).ready(function() {
 
     accordion();
+buttonMobileMenu();
 
 
-    var md = new MobileDetect(window.navigator.userAgent);
 
-    if (md.userAgent() == "Safari" && md.mobile() == "iPhone" || md.mobile() == "iPad") {
-        $("html,body").css("overflow", "hidden");
-    }
+
     // для инициализации tooltips
     // $( document ).tooltip({
     //   track: true
     // });  
-    // скролл по ссылке с атрибутом href 
-    // $(".header_nav a[href*='#']").on("click", function(e) {
-    //     e.preventDefault();
-    //     var anchor = $(this);
-    //     $('html, body').stop().animate({
-    //         scrollTop: $(anchor.attr('href')).offset().top
-    //     }, 500);
-    //     return false;
-    // });
+    //скролл по ссылке с атрибутом href 
+    $(".mobile-menu a[href*='#']").on("click", function(e) {
+        e.preventDefault();
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 500);
+        return false;
+    });
+    $(".order a[href*='#']").on("click", function(e) {
+        e.preventDefault();
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 500);
+        return false;
+    });
+    $(".footer-nav a[href*='#']").on("click", function(e) {
+        e.preventDefault();
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 500);
+        return false;
+    });
+        $(".header_nav a[href*='#']").on("click", function(e) {
+        e.preventDefault();
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 500);
+        return false;
+    });
     // Скролл по классу .scroll_to и атрибуту data-scroll у кнопки к примеру (data-scroll="куда скроллим" в элементе куда скроллим ставим id потом впишем в куда скроллим)
     // $(".scroll_to").on("click", function(e) {
     //     e.preventDefault();

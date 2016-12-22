@@ -32,6 +32,47 @@ body textarea:required:valid
 	color: #666
 // Оформление слайдбара
 
+.mobile-menu
+	width: 160px
+	background: rgba(255,255,255,0.8)
+	position: fixed
+	z-index: 1000
+	right: 0
+	top: -230px
+	transition: .3s
+	&.active
+		top: 0px
+	.close-but
+		position: absolute
+		right: 20px
+		top: 20px
+		span
+			display: block
+			background: #ce93bf
+			width: 31px
+			height: 5px
+		.center
+			background: transparent
+		.left
+			transform: rotate(45deg)
+			position: absolute
+			top: 10px
+		.right
+			transform: rotate(-45deg)
+			position: absolute
+			top: 10px
+	ul
+		margin: 0
+		font-size: 12px
+		color: #3c3c3c
+		padding: 43px 0
+		font-weight: 900
+		li
+			list-style: none
+			padding: 14px 0 14px 20px
+			border-bottom: 1px solid #ce93bf
+			a
+				color: #3c3c3c
 
 .button-mobile-menu
 	display: none
@@ -56,18 +97,9 @@ body textarea:required:valid
 			top: 10px
 		&.right
 			top: 20px
-	&.active
-		.center
-			background: transparent
-		.left
-			transform: rotate(45deg)
-			position: absolute
-			top: 10px
-		.right
-			transform: rotate(-45deg)
-			position: absolute
-			top: 10px
+	
 
+	
 // Секция our_advantages
 .our_advantages
 	min-height: 630px
@@ -162,15 +194,32 @@ body textarea:required:valid
 		position: relative
 		margin: 23px 0
 		padding-left: 43px
-		padding: 23px 27px
-		width: auto
+		padding: 28px 24px
+		width: 461px
 		p
 			text-align: left
 		b
 			color: #ce93bf
+	.title-2
+		padding: 28px 40px
+		width: 552px
+		margin-right: 8px
+	.title-1
+		margin-top: 71px
+		margin-left: 24px
+	.title-3
+		margin-top: 138px
+		margin-left: 25px
+		padding-left: 35px
+		padding-bottom: 9px
+
 	.tittle-left
 		float: right
-		margin-top: 114px	
+		margin-top: 85px	
+		&.title-4
+			width: 560px
+			margin-top: 139px
+			padding-left: 54px
 		&:before
 			content: ""
 			@include sprite($figure-up)
@@ -256,7 +305,7 @@ body textarea:required:valid
 	font-size: 1.8rem
 	color: #fff
 	overflow: auto
-	max-height: 415px
+	max-height: 406px
 	#wrapper
 		width: 250px
 		height: 350px
@@ -374,6 +423,7 @@ body textarea:required:valid
 			@include sprite($disk)
 		.disk-text
 			margin-top: -2px
+
 		.instagram
 			@include sprite($instogram)
 		.instagram-text
@@ -669,6 +719,8 @@ body textarea:required:valid
 			text-transform: uppercase
 			font-size: 14px
 			cursor: pointer
+			a
+				color: #fff
 	.develp-company
 		text-align: right
 		font-size: 12px

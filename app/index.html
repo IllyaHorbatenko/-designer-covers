@@ -1617,28 +1617,130 @@
             </div>
         </div>
     </div>
-    <!-- вариант меню на мобильном -->
-    <div class="popup pop3" data-modal="modal-3">
+    <!-- модальное окно области переноса файлов -->
+    <div class="popup popup3" data-modal="modal-2">
         <div class="dm-table">
             <div class="dm-cell">
                 <div class="dm-modal">
-                    <nav class="header_nav_mobile">
-                        <ul>
-                            <li><a href="#">Примеры кухонь</a>
-                            </li>
-                            <li><a href="#">Преимущества</a>
-                            </li>
-                            <li><a href="#">Отзывы</a>
-                            </li>
-                            <li><a href="tel:73842596168">+7 3842 59 61 68</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <a href="#" class="close">
+                        <span class="top"></span>
+                        <span class="bottom"></span>
+                    </a>
+                    <div class="add-file-area">
+                        <p class="text">Перетащите картинку в эту область</p>
+                    </div>
+                    <p class="or">или</p>
+                    <div class="add-foto-form"><span class="disk"></span>
+                        <p class="disk-text">Виберете картинку на доске</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="overlay">
         </div>
+    </div>
+    <!-- модалка выбора цвета -->
+    <div class="popup popup4" data-modal="modal-4">
+        <div class="dm-table">
+            <div class="dm-cell">
+                <div class="dm-modal">
+                    <a href="#" class="close">
+                        <span class="top"></span>
+                        <span class="bottom"></span>
+                    </a>
+                    <div class="color-backround">
+                        <p>Выбери цвет фона</p>
+                        <span class="color-1"></span>
+                        <span class="color-2"></span>
+                        <span class="color-3"></span>
+                        <span class="color-4"></span>
+                        <span class="color-5"></span>
+                        <span class="color-6"></span>
+                        <span class="color-7"></span>
+                        <span class="color-8"></span>
+                        <span class="color-9"></span>
+                        <span class="color-10"></span>
+                        <span class="color-11"></span>
+                        <span class="color-12"></span>
+                        <span class="color-13"></span>
+                        <span class="color-14"></span>
+                        <span class="color-15"></span>
+                        <span class="color-16"></span>
+                        <span class="color-17"></span>
+                        <span class="color-18"></span>
+                        <span class="color-19"></span>
+                        <span class="color-20"></span>
+                        <span class="color-21"></span>
+                        <span class="color-22"></span>
+                        <span class="color-23"></span>
+                        <span class="color-24"></span>
+                        <span class="color-25"></span>
+                        <span class="color-26"></span>
+                        <span class="color-27"></span>
+                    </div>
+                    <div class="colot-text">
+                        <p>Выбери цвет фона</p>
+                        <span class="color-1"></span>
+                        <span class="color-2"></span>
+                        <span class="color-3"></span>
+                        <span class="color-4"></span>
+                        <span class="color-5"></span>
+                        <span class="color-6"></span>
+                        <span class="color-7"></span>
+                        <span class="color-8"></span>
+                        <span class="color-9"></span>
+                        <span class="color-10"></span>
+                        <span class="color-11"></span>
+                        <span class="color-12"></span>
+                        <span class="color-13"></span>
+                        <span class="color-14"></span>
+                        <span class="color-15"></span>
+                        <span class="color-16"></span>
+                        <span class="color-17"></span>
+                        <span class="color-18"></span>
+                        <span class="color-19"></span>
+                        <span class="color-20"></span>
+                        <span class="color-21"></span>
+                        <span class="color-22"></span>
+                        <span class="color-23"></span>
+                        <span class="color-24"></span>
+                        <span class="color-25"></span>
+                        <span class="color-26"></span>
+                        <span class="color-27"></span>
+                    </div>
+                    <form id="form">
+                        <div>
+                            <label>Напиши свой текст</label>
+                            <div class="modal_form_input_wrap">
+                                <div class="modal_input_error">Заполните поле
+                                    <div class="modal_error_triangle"></div>
+                                    <div class="modal_error_chest_img"></div>
+                                </div>
+                                <input name="name" class="modal_form_input" type="text" placeholder="Ввод...">
+                            </div>
+                        </div>
+                        <input type="submit" value="Применить">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+        </div>
+    </div>
+    <!-- вариант меню на мобильном -->
+    <div class="mobile-menu">
+        <div class="close-but">
+            <span class="left"></span>
+            <span class="center"></span>
+            <span class="right"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#create-cover-section">Создать чехол</a></li>
+                <li><a href="#intermediate">Горантия и доставка</a></li>
+                <li><a href="#book-cover-section">Заказать</a></li>
+            </ul>
+        </nav>
     </div>
     <!-- Здесь пишем код -->
     <!-- header -->
@@ -1647,22 +1749,19 @@
             <div class="container">
                 <div class="row">
                     <div class="clearfix top-header-panel">
-                        <div class="header_logo col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                        <div class="header_logo col-lg-3 col-sm-3 col-md-3">
                             <a href="index.html" class="logo">
                                 <h1>Pickcase</h1>
                             </a>
                         </div>
                         <nav class="header_nav  col-lg-6 col-sm-7 col-md-6">
                             <ul>
-                                <li><a href="#">Создать чехол</a>
-                                </li>
-                                <li><a href="#">Гарантия и доставка</a>
-                                </li>
-                                <li><a href="#">Заказать</a>
-                                </li>
+                                <li><a href="#create-cover-section">Создать чехол</a></li>
+                                <li><a href="#intermediate">Горантия и доставка</a></li>
+                                <li><a href="#book-cover-section">Заказать</a></li>
                             </ul>
                         </nav>
-                        <a href="tel:+380501232567" class="col-lg-3 col-sm-2 col-md-3 col-xs-7 header-tel-back">8 (050) 123 25 67</a>
+                        <a href="tel:+380501232567" class="col-lg-3 col-sm-2 col-md-3 col-xs-5 header-tel-back">8 (050) 123 25 67</a>
                         <div class="button-mobile-menu">
                             <span class="left"></span>
                             <span class="center"></span>
@@ -1690,7 +1789,7 @@
                             <div class="mockup-img2"><img src="img/Mockup1.png"></div>
                             <div class="order">
                                 <p><b>Две минуты</b> - и макет чехла готов к печати! Попробуй :)</p>
-                                <a href="#" class="go-to-constructor-button">Открыть конструктор</a>
+                                <a href="#create-cover-section" class="go-to-constructor-button">Открыть конструктор</a>
                             </div>
                         </div>
                     </div>
@@ -1738,7 +1837,7 @@
                     <div class="our_advantages_item-row-1 flex-mob clearfix">
                         <div class="our_advantages_item order-item-1 col-lg-6 col-md-6 col-sm-6">
                             <div class="our_advantages_title clearfix">
-                                <h4 class="tittle-right">
+                                <h4 class="tittle-right title-1">
                                     <p>
                                         <b>Единственный в своём роде</b>
                                         уникальный аксессуар, 
@@ -1764,7 +1863,7 @@
                         </div>
                         <div class="our_advantages_item order-item-1 col-lg-6 col-md-6 col-sm-6">
                             <div class="our_advantages_title clearfix">
-                                <h4 class="tittle-left">
+                                <h4 class="tittle-left title-2">
                                 <p><b>Оригинальный подарок </b>
                                       <p> близкому или любимому человеку</p>
                                 </p></h4>
@@ -1776,7 +1875,7 @@
                     <div class="our_advantages_item-row-3 flex-mob clearfix">
                         <div class="our_advantages_item order-item-1 col-lg-6 col-md-6 col-sm-6">
                             <div class="our_advantages_title clearfix">
-                                <h4 class="tittle-right">
+                                <h4 class="tittle-right title-3">
                                     <p>
                                         <b>Звёздный тренд </b>
                                         <p>который оступен каждому</p>
@@ -1801,7 +1900,7 @@
                         </div>
                         <div class="our_advantages_item order-item-1 col-lg-6 col-md-6 col-sm-6">
                             <div class="our_advantages_title clearfix">
-                                <h4 class="tittle-left">
+                                <h4 class="tittle-left title-4">
                                     <b>Потрясающее качество печати:  </b>
                                       <p>четкие линии, краска</p>
                                        <p>не выгорает и не выцветает,</p>
@@ -1818,7 +1917,7 @@
             </div>
         </section>
         <!-- секция конструктора -->
-        <section class="create-cover-section">
+        <section class="create-cover-section" id="create-cover-section">
             <div class="container">
                 <h2 class="create-cover-title">Создай свой чехол за 2 минуты и 199 грн. и получи готовый уже завтра</h2>
                 <div class="row">
@@ -1992,15 +2091,14 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <a href="#" class="want">Хочу именной чехол</a>
+                            <a href="#" class="want modal" data-modal="modal-4">Хочу именной чехол</a>
                             <div class="functions-container">
                                 <div class="add-files-container">
                                     <h4 class="functions-title">
                                             <p>Хочу чехол с фото:</p>
                                             <p class="second">(загрузить фотографию)</p>
                                         </h4>
-                                    <div class="add-foto-form"><span class="disk"></span>
+                                    <div class="add-foto-form modal" data-modal="modal-2"><span class="disk"></span>
                                         <p class="disk-text">Загрузить с диска</p>
                                     </div>
                                     <p class="or">или</p>
@@ -2026,7 +2124,7 @@
             </div>
         </section>
         <!--    intermediate  -->
-        <section class="intermediate">
+        <section class="intermediate" id="intermediate">
             <div class="container">
                 <h3 class="intermediate-title">
                     <p>Уже больше 895 человек со всей Украины </p>
@@ -2120,21 +2218,21 @@
                         <p>лучшие условия доставки и оплаты</p>
                     </h3>
                     <div class="clearfix">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6  col-xs-12">
                             <div class="delivery-scheme-title">
                                 <p>Вы получите чехол</p>
                             </div>
-                            <div class="delivery-scheme-item-1 point col-lg-6 col-md-6 col-sm-6">
+                            <div class="delivery-scheme-item-1 point col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                 <div class="content"><span class="box">Новой почтой</span></div>
                             </div>
-                            <div class="delivery-scheme-item-2 point col-lg-6 col-md-6 col-sm-6">
+                            <div class="delivery-scheme-item-2 point col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                 <div class="content"><span class="box-2">Укрпочтой</span></div>
                             </div>
-                            <div class="delivery-scheme-item-1 max col-lg-12 col-md-12 col-sm-12">
+                            <div class="delivery-scheme-item-1 max col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="content"><span class="clock">В среднем, доставка занимает 1-2 дня</span></div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6  col-xs-12">
                             <div class="delivery-scheme-title">
                                 <p>Оплатить можно</p>
                             </div>
@@ -2161,24 +2259,24 @@
                                 </div>
                                 <div class="delivery-scheme-item-2 col-lg-6 col-md-6 col-sm-6">
                                     <div class="content indent-3">
-                                    <span class="good">
+                                        <span class="good">
                                         <p>Получил оплатил</p>
                                         <p>Все просто!</p> 
                                     </span>
-                                </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="wholesale-price-container col-lg-6 col-md-6 col-sm-6">
-                        <p class="discuss-lable">При заказе от 3-х чехлов мы гарантируем оптовую цену!</p> 
-                        <span class="discuss"><p>Обсудить условия</p></span>
+                        <p class="discuss-lable">При заказе от 3-х чехлов мы гарантируем оптовую цену!</p>
+                        <span class="discuss modal" data-modal='modal-1'><p>Обсудить условия</p></span>
                     </div>
                 </div>
             </div>
         </section>
         <!-- заказать чехол -->
-        <section class="book-cover-section">
+        <section class="book-cover-section" id="book-cover-section">
             <div class="container">
                 <div class="row">
                     <h3 class="title"><p>Хочешь порадовать себя оригинальным аксессуаром?</p>
@@ -2186,43 +2284,43 @@
                     <div class="col-lg-6 col-md-6 col-sm-5 form-aside-container">
                         <aside class="form-aside">
                             <b>Сделай свой смартфон ярким!</b>
-                            <p>Сделай заказ сейчас, наш дизайнер перезвонит тебе,  уточнит детали и он отправит тебе несколько крутых вариантов чехла на почту ВКонтакте.</p>
+                            <p>Сделай заказ сейчас, наш дизайнер перезвонит тебе, уточнит детали и он отправит тебе несколько крутых вариантов чехла на почту ВКонтакте.</p>
                         </aside>
                         <form id="form">
-                        <div>
-                            <label>Напиши модель своего телефона</label>
-                            <div class="modal_form_input_wrap">
-                                <div class="modal_input_error">Заполните поле
-                                    <div class="modal_error_triangle"></div>
-                                    <div class="modal_error_chest_img"></div>
+                            <div>
+                                <label>Напиши модель своего телефона</label>
+                                <div class="modal_form_input_wrap">
+                                    <div class="modal_input_error">Заполните поле
+                                        <div class="modal_error_triangle"></div>
+                                        <div class="modal_error_chest_img"></div>
+                                    </div>
+                                    <input name="input" class="modal_form_input" type="text" placeholder="Модель">
                                 </div>
-                                <input name="input" class="modal_form_input" type="text" placeholder="Модель">
                             </div>
-                        </div>
-                        <div>
-                            <label>Напиши свой номер</label>
-                            <div class="modal_form_input_wrap">
-                                <div class="modal_input_error">Заполните поле
-                                    <div class="modal_error_triangle"></div>
-                                    <div class="modal_error_chest_img"></div>
+                            <div>
+                                <label>Напиши свой номер</label>
+                                <div class="modal_form_input_wrap">
+                                    <div class="modal_input_error">Заполните поле
+                                        <div class="modal_error_triangle"></div>
+                                        <div class="modal_error_chest_img"></div>
+                                    </div>
+                                    <input name="phone" class="modal_form_phone" type="text" placeholder="Телефон">
                                 </div>
-                                <input name="phone" class="modal_form_phone" type="text" placeholder="Телефон">
                             </div>
-                        </div>
-                        <div>
-                            <label>Укажи свой e-mail и ссылку ВКонтакте</label>
-                            <div class="modal_form_input_wrap">
-                                <div class="modal_input_error">Заполните поле
-                                    <div class="modal_error_triangle"></div>
-                                    <div class="modal_error_chest_img"></div>
+                            <div>
+                                <label>Укажи свой e-mail и ссылку ВКонтакте</label>
+                                <div class="modal_form_input_wrap">
+                                    <div class="modal_input_error">Заполните поле
+                                        <div class="modal_error_triangle"></div>
+                                        <div class="modal_error_chest_img"></div>
+                                    </div>
+                                    <input name="email" class="modal_form_email" type="text" placeholder="E-mail / ID">
                                 </div>
-                                <input name="email" class="modal_form_email" type="text" placeholder="E-mail / ID">
                             </div>
-                        </div>
-                        <input type="hidden" name="form_name" value="">
-                        <input type="hidden" name="form_type" value="modal">
-                        <input type="submit" value="Жми, и проверяй сообщения!">
-                    </form>
+                            <input type="hidden" name="form_name" value="">
+                            <input type="hidden" name="form_type" value="modal">
+                            <input type="submit" value="Жми, и проверяй сообщения!">
+                        </form>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-7 foto-container">
                         <div class="img-container">
@@ -2268,13 +2366,13 @@
                 <div class="row footer-container">
                     <div class="col-lg-6 col-md-6 col-sm-8 footer-nav">
                         <ul>
-                            <li>Создать чехоЛ</li>
-                            <li>Гарантия и доставка</li>
-                            <li>Заказать</li>
+                                <li><a href="#create-cover-section">Создать чехол</a></li>
+                                <li><a href="#intermediate">Горантия и доставка</a></li>
+                                <li><a href="#book-cover-section">Заказать</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-4 develp-company">
-                        <a href="http://landing.melfori.com/">Создание сайта: </a>
+                        <a href="http://landing.melfori.com/" target="_blank">Создание сайта: </a>
                     </div>
                 </div>
                 <div class="footer-link">
