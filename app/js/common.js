@@ -22,6 +22,22 @@ function buttonMobileMenu() {
     });
 
 }
+
+function framsFun (){
+    var frame = document.querySelectorAll('iframe');
+
+
+    for(var i = 0; i < frame.length; i++){
+        if(document.documentElement.clientWidth < 850){
+            frame[i].setAttribute("width", "100%");
+            frame[i].setAttribute("height", "900");
+            if(i > 0){
+                frame[i].setAttribute("height", "650");
+            }
+        }
+    }
+}
+
 //изменяется - для плавной обратной анимации animate.css*/
 $(window).scroll(function() {
 
