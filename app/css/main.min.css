@@ -1511,7 +1511,8 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .delivery-scheme-section .good:before{background-position:-77px -186px;width:36px;height:30px;top:3px}
 .delivery-scheme-section .wholesale-price-container{float:none;text-align:center;margin:33px auto auto}
 .delivery-scheme-section .wholesale-price-container .discuss-lable{font-size:20px;margin-bottom:8px}
-.delivery-scheme-section .wholesale-price-container .discuss{background:#ff9800;display:block;cursor:pointer;color:#fff;font-size:16px;padding:20px 0 25px}
+.delivery-scheme-section .wholesale-price-container .discuss{background:#ff9800;display:block;cursor:pointer;color:#fff;font-size:16px;padding:20px 0 25px;-webkit-transition:.3s;transition:.3s}
+.delivery-scheme-section .wholesale-price-container .discuss:hover{-webkit-box-shadow:0 0 6px 1px grey;box-shadow:0 0 6px 1px grey}
 .img-container{display:inline-block}
 .book-cover-section .title{font-size:28px;color:#3c3c3c;text-align:center;text-transform:uppercase;margin-top:111px;margin-bottom:64px;line-height:1.2}
 .footer,.footer .develp-company a:hover,.footer .footer-link a,.footer .footer-link a:hover,.footer .footer-nav li a{color:#fff}
