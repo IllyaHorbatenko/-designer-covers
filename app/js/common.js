@@ -10,6 +10,7 @@ $(function() {
 $(window).resize(function() {
 
 });
+
 function buttonMobileMenu() {
     var button = $('.button-mobile-menu'),
         buttonMenu = $('.mobile-menu .close-but');
@@ -23,20 +24,26 @@ function buttonMobileMenu() {
 
 }
 
-function framsFun (){
-    var frame = document.querySelectorAll('iframe');
+function framsFun() {
 
+    if (window.matchMedia("(max-width: 992px)").matches) {
 
-    for(var i = 0; i < frame.length; i++){
-        if(document.documentElement.clientWidth < 850){
-            frame[i].setAttribute("width", "100%");
-            frame[i].setAttribute("height", "900");
-            if(i > 0){
-                frame[i].setAttribute("height", "650");
-            }
+        var window_W = document.documentElement.clientWidth;
+        var window_H = window.innerHeight;
+        if (window_W < 950) {
+            document.getElementById('personal-case-frame').style.width = window_W - 15 + "px";
+        }
+        if (window_H < 735) {
+            document.getElementById('personal-case-frame').style.height = "915px";
         }
     }
+
 }
+
+
+
+
+
 
 //изменяется - для плавной обратной анимации animate.css*/
 $(window).scroll(function() {
@@ -78,9 +85,9 @@ if ('addEventListener' in document) {
 $(document).ready(function() {
 
     accordion();
-buttonMobileMenu();
+    buttonMobileMenu();
 
-
+    framsFun();
 
 
     // для инициализации tooltips
@@ -112,7 +119,7 @@ buttonMobileMenu();
         }, 500);
         return false;
     });
-        $(".header_nav a[href*='#']").on("click", function(e) {
+    $(".header_nav a[href*='#']").on("click", function(e) {
         e.preventDefault();
         var anchor = $(this);
         $('html, body').stop().animate({

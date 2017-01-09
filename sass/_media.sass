@@ -8,6 +8,14 @@
 	// для фиксированного сайта
 	// body
 	// 	width: 1200px
+
+
+	.img-container
+		.img-item
+			padding: 0
+			width: 145px
+			height: 145px
+
 	.header_modal
 		margin-top: 20px
 	.intermediate
@@ -298,9 +306,6 @@
 			font-size: 23px
 			margin-top: 89px
 			margin-bottom: 61px
-		.foto-container 
-			img
-				height: 122px
 		.intermediate-form-container 
 			.get-discount
 				font-size: 15px
@@ -411,9 +416,6 @@
 			font-size: 23px
 			margin-top: 93px
 			margin-bottom: 50px
-		.foto-container
-			img
-				height: 132px	
 		.form-aside-container
 			padding-right: 104px
 			padding-left: 7px
@@ -469,6 +471,15 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+
+	.img-container
+		.img-item
+			width: 112px
+			height: 112px
+	.desktop-frame
+		display: none
+	.mobile-frame
+		display: block
 	
 	.header_logo 	
 		a 
@@ -792,10 +803,6 @@
 			margin-bottom: 46px
 			p
 				display: inline-block 
-		.foto-container
-			img
-				height: 96px
-				margin-bottom: 10px
 		.intermediate-form-container 
 			.get-discount
 				font-size: 14px
@@ -931,12 +938,6 @@
 				font-size: 16px
 			p
 				font-size: 12px
-		.foto-container 
-			margin-top: 11px
-			padding-left: 47px
-			img
-				margin-bottom: 10px
-				height: 107px
 	.footer
 		padding-top: 139px
 		margin-top: 0
@@ -966,6 +967,12 @@
 				right: -66px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
+
+	.foto-container
+		margin-bottom: 40px
+		.img-container
+			margin-bottom: 4px
+
 	.header_logo
 		width: 170px
 		float: left
@@ -1146,10 +1153,6 @@
 		.functions-container
 			width: 150px
 
-
-	.foto-container 
-		img
-			margin-bottom: 0
 	.img-item
 		display: inline-block
 		padding: 0 5px
@@ -1177,6 +1180,7 @@
 				.box
 					&:before
 						top: -9px
+						left: -36px
 		.delivery-scheme-item-2,
 		.max
 			padding-right: 15px
@@ -1196,7 +1200,7 @@
 					display: inline
 				span
 					&:before
-						left: -45px
+						left: -38px
 						top: -8px
 	.book-cover-section 
 		.form-aside-container 
@@ -1264,8 +1268,6 @@
 	.header
 		min-height: auto
 	.book-cover-section 
-		.foto-container
-			padding: 0
 
 
 	.go-to-constructor-container 
@@ -1417,11 +1419,12 @@
 		.color-backround,
 		.colot-text
 			display: none
-@media only screen and (max-width : 375px)
-	.intermediate,
-	.book-cover-section
+@media only screen and (max-width : 383px)
+
+	.img-container 
 		.mob-setting
 			display: none
+
 	.constructor-area-container 
 		min-height: 680px
 		.want
