@@ -1436,6 +1436,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .our_advantages_item-row-3{margin-bottom:94px}
 .our_advantages_item-row-4{margin-bottom:95px}
 .create-cover-section{text-align:center}
+.create-cover-section .frame-container iframe{width:811px;height:891px}
 .create-cover-title{color:#404040;font-size:28px;text-transform:uppercase;margin-top:79px;font-weight:900;margin-bottom:66px}
 .accordion_content{display:none;font-size:1.8rem;color:#fff;overflow:auto;max-height:406px}
 .accordion_content #wrapper{width:250px;height:350px;margin:0 auto}
@@ -1473,13 +1474,14 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .some-constructor .phone-foto .your-name{height:186px;width:375px;background:#fff;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);position:absolute;right:53px;top:126px}
 .some-constructor .phone-foto .your-name:before{content:'';display:inline-block;background-image:url(../img/sprite.png);background-position:-332px -99px;width:73px;height:69px;position:absolute;right:48px;bottom:-71px;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
 .some-constructor .phone-foto .model-foto{position:absolute;bottom:1px;right:0;z-index:1}
-.intermediate .intermediate-title{text-align:center;font-size:28px;text-transform:uppercase;margin-top:117px;line-height:1.3;margin-bottom:69px}
+.intermediate .intermediate-title{text-align:center;font-size:28px;text-transform:uppercase;margin-top:60px;line-height:1.3;margin-bottom:69px}
 .intermediate .intermediate-form-container .get-discount{font-size:18px;color:#fff;background:#ce93bf;text-align:center;padding:13px 150px;line-height:1.2;margin-bottom:20px}
 .intermediate .intermediate-form-container .subscribe-insta,.intermediate .intermediate-form-container .subscribe-insta-2{font-size:16px;text-align:center;margin-bottom:19px;position:relative;padding-left:100px}
 .intermediate .intermediate-form-container .subscribe-insta .text,.intermediate .intermediate-form-container .subscribe-insta-2 .text{background:#f5e9f2;padding:20px 0 24px;display:block}
 .intermediate .intermediate-form-container .subscribe-insta .numder,.intermediate .intermediate-form-container .subscribe-insta-2 .numder{color:#fff;background:#ce93bf;padding:21px 29px;position:absolute;left:0}
 .intermediate .intermediate-form-container .subscribe-insta a,.intermediate .intermediate-form-container .subscribe-insta a.hover,.intermediate .intermediate-form-container .subscribe-insta-2 a,.intermediate .intermediate-form-container .subscribe-insta-2 a.hover{color:#3c3c3c}
 .intermediate .intermediate-form-container .subscribe-insta a p,.intermediate .intermediate-form-container .subscribe-insta-2 a p{text-decoration:underline}
+.intermediate .foto-container iframe{width:459px;height:500px;margin-left:108px}
 #form input{width:100%;height:68px;display:inline-block;margin-bottom:20px;padding-left:17px;border:1px solid #ce93bf}
 #form input::-webkit-input-placeholder{color:#afafaf;font-style:italic}
 #form input:-moz-placeholder{color:#afafaf;font-style:italic}
@@ -1524,7 +1526,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .book-cover-section .form-aside{margin-bottom:22px}
 .book-cover-section .form-aside b{font-size:24px}
 .book-cover-section .form-aside p{font-size:18px;margin-top:-3px;line-height:1.3}
-.footer{background:url(../img/backgrond-footer.png);-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;padding-top:173px;margin-top:52px;padding-bottom:43px}
+.footer{background:url(../img/backgrond-footer.png);-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;padding-top:173px;margin-top:52px;padding-bottom:29px}
 .footer .footer-container{padding-bottom:46px}
 .footer .footer-nav ul{padding-left:36px}
 .footer .footer-nav li{display:inline-block;margin-right:49px;text-transform:uppercase;font-size:14px;cursor:pointer}
@@ -1630,6 +1632,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .intermediate .intermediate-form-container .subscribe-insta,.intermediate .intermediate-form-container .subscribe-insta-2{margin-bottom:15px;padding-left:82px}
 .intermediate .intermediate-form-container .subscribe-insta .numder,.intermediate .intermediate-form-container .subscribe-insta-2 .numder{background:#ce93bf;padding:16px 22px}
 .intermediate .intermediate-form-container .subscribe-insta .text,.intermediate .intermediate-form-container .subscribe-insta-2 .text{padding:12px 0 20px}
+.intermediate .foto-container iframe{margin-left:0}
 #form input{height:57px;margin-bottom:17px;padding-left:7px}
 #form input::-webkit-input-placeholder{font-size:14px}
 #form input:-moz-placeholder{font-size:14px}
@@ -1675,7 +1678,9 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .order .go-to-constructor-button{padding:11px 18px;font-size:13px}
 .mockup-container{padding-top:0}
 }
-@media only screen and (max-width:992px){.img-container .img-item{width:112px;height:112px}
+@media only screen and (max-width:992px){.create-cover-section{text-align:center}
+.create-cover-section .frame-container iframe{width:100%}
+.img-container .img-item{width:112px;height:112px}
 .desktop-frame{display:none}
 .header_logo,.mobile-frame{display:block}
 .header_logo a h1{font-size:27px;margin:0 0 0 18px}
@@ -1770,6 +1775,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .intermediate .intermediate-form-container .subscribe-insta .text,.intermediate .intermediate-form-container .subscribe-insta-2 .text{font-size:12px;padding:12px 0 13px}
 .intermediate .intermediate-form-container .subscribe-insta{margin-bottom:13px}
 .intermediate .intermediate-form-container .subscribe-insta-2{margin-bottom:12px}
+.intermediate .foto-container iframe{width:308px;height:303px;margin-left:36px}
 #form input{height:42px;margin-bottom:13px;padding-left:7px}
 #form input::-webkit-input-placeholder{font-size:12px}
 #form input:-moz-placeholder{font-size:12px}
@@ -1810,7 +1816,8 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .popup3 .add-file-area{width:100%}
 .our_advantages_title .tittle-left:after{right:-66px}
 }
-@media only screen and (max-width:767px){.header-tel-back,.img-container,.our_advantages_item .some-foto,.our_advantages_item .some-foto-1,.our_advantages_item .some-foto-2,.our_advantages_item .some-foto-3{text-align:center}
+@media only screen and (max-width:767px){.header-tel-back,.img-container,.intermediate .foto-container,.our_advantages_item .some-foto,.our_advantages_item .some-foto-1,.our_advantages_item .some-foto-2,.our_advantages_item .some-foto-3{text-align:center}
+.intermediate .foto-container iframe{width:459px;height:492px;margin-left:0}
 .foto-container{margin-bottom:40px}
 .foto-container .img-container{margin-bottom:4px}
 .header_logo{width:170px;float:left}
@@ -1941,6 +1948,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .header_title h1{font-size:26px}
 .modal_form_input_wrap .modal_input_error{right:0}
 .intermediate .intermediate_title h3{font-size:20px}
+.intermediate .foto-container iframe{width:308px}
 .our_advantages_item .some-foto-4{margin:auto;width:310px}
 .popup3 .add-foto-form{width:100%;padding:19px 13px 17px 50px}
 }
@@ -1974,6 +1982,8 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .our_advantages_title .title-2{width:217px}
 .our_advantages_title .tittle-left:after{right:-20px}
 .our_advantages_title .tittle-left.title-4{width:280px}
+}
+@media only screen and (max-width:335px){.intermediate .foto-container iframe{width:150px}
 }
 @media only screen and (min-width:1201px){.container{width:1200px}
 }

@@ -320,6 +320,9 @@
 					padding: 16px 22px
 				.text
 					padding: 12px 0 20px
+		.foto-container
+			iframe
+				margin-left: 0
 	#form 
 		input
 			height: 57px
@@ -468,10 +471,16 @@
 	.mockup-container
 		padding-top: 0
 
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-
+	.create-cover-section
+		text-align: center
+		.frame-container
+			iframe
+				width: 100%
 	.img-container
 		.img-item
 			width: 112px
@@ -821,6 +830,12 @@
 				margin-bottom: 13px
 			.subscribe-insta-2
 				margin-bottom: 12px
+		.foto-container
+			iframe
+				width: 308px
+				height: 303px
+				margin-left: 36px
+
 	#form 
 		input
 			height: 42px
@@ -968,6 +983,13 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 
+	.intermediate
+		.foto-container
+			text-align: center
+			iframe
+				width: 459px
+				height: 492px
+				margin-left: 0
 	.foto-container
 		margin-bottom: 40px
 		.img-container
@@ -1407,6 +1429,9 @@
 		.intermediate_title
 			h3
 				font-size: 20px
+		.foto-container
+			iframe
+				width: 308px
 	.our_advantages_item 
 		.some-foto-4
 			margin: auto
@@ -1522,6 +1547,11 @@
 				width: 280px
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width : 335px)
+	.intermediate
+		.foto-container
+			iframe
+				width: 150px
 @media only screen and (max-width : 320px)
 	/**/
 
